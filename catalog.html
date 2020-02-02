@@ -97,7 +97,60 @@
       </ul>
       <section>
         <h2>Фильтр</h2>
-        <!-- Здесь будет форма с фильтром -->
+        <form action="https://echo.htmlacademy.ru" method="post" name="filter">
+          <fieldset>
+            <legend>Цена:</legend>
+            <div class="range-track">
+              <div class="range-track-pin range-track-pin-min"></div>
+              <div class="range-track-pin range-track-pin-max"></div>
+            </div>
+            <p>
+              <input type="number" name="price-min" id="price-min" value="0" min="0" max="30000">
+              <label for="price-min" class="visually-hidden">Минимальная цена</label>
+              <input type="number" name="price-max" id="price-max" value="30000" min="0" max="30000">
+              <label for="price-max" class="visually-hidden">Максимальная цена</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                <label>Bosch</label>
+              </li>
+              <li>
+                <input type="checkbox" name="interscol" id="filter-interscol">
+                <label for="filter-interscol">Интерскол</label>
+              </li>
+              <li>
+                <input type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-makita">Makita</label>
+              </li>
+              <li>
+                <input type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="power" value="batery" id="power-batery" checked>
+                <label for="power-batery">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" name="power" value="electrical-network" id="power-electrical-network">
+                <label for="power-electrical-network">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
       <section>
         <h2>Сортировка</h2>
