@@ -11,10 +11,10 @@
         <a>
           <img src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт">
         </a>
-        <div class="icon-search">
-          Поиск
-          <!-- Здесь будет форма поиска -->
-        </div>
+        <form action="https://echo.htmlacademy.ru" method="post" name="search">
+          <input type="text" name="search" id="search-field" class="icon-search" placeholder="Поиск:" minlength="3" required>
+          <label for="search-field" class="visually-hidden">Поиск</label>
+        </form>
         <!-- ссылка на страницу закладок -->
         <a href="#" class="icon-bookmark">
           Закладки:
@@ -408,9 +408,7 @@
         </p>
         <p>
           <label for="feedback-body">Текст письма:</label>
-          <textarea name="body" id="feedback-body" required>
-            В свободной форме
-          </textarea>
+          <textarea name="body" id="feedback-body" required>В свободной форме</textarea>
         </p>
         <button type="submit">Отправить</button>
       </form>
@@ -419,7 +417,7 @@
 
     <section>
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5df493e35e83f5fa35abd0f11aae3008a5200418afd3cd81cbd551089eba682b&amp;source=constructor" width="940" height="446" frameborder="0"></iframe>
+      <iframe class="iframe-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5df493e35e83f5fa35abd0f11aae3008a5200418afd3cd81cbd551089eba682b&amp;source=constructor" width="940" height="446"></iframe>
       <button type="button" class="icon-close" aria-label="Закрыть"></button>
     </section>
 
