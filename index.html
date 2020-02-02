@@ -313,7 +313,8 @@
           Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
-        <a href="#" target="_blank">
+        <!-- по клику открывается попап с интерактивной картой -->
+        <a href="#">
           <img src="img/map.jpg" width="300" height="158" alt="Адрес компании Техномарт - г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </a>
         <button type="button">Заблудились? Hапишите нам!</button>
@@ -435,6 +436,13 @@
       </form>
       <button type="button" class="icon-close" aria-label="Закрыть"></button>
     </section>
+
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5df493e35e83f5fa35abd0f11aae3008a5200418afd3cd81cbd551089eba682b&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
+      <button type="button" class="icon-close" aria-label="Закрыть"></button>
+    </section>
+
     <script src="js/script.js"></script>
   </body>
 </html>
