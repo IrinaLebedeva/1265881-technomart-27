@@ -40,7 +40,7 @@
         </div>
         <ul>
           <li>
-            <button type="button" class="icon-login">Войти</button>
+            <a href="#" class="icon-login">Войти</a>
           </li>
           <li>
             <a href="#">Регистрация</a>
@@ -392,15 +392,48 @@
     </footer>
 
     <section>
-      <h2>Форма обратной связи</h2>
-      <!-- Здесь будет форма обратной связи -->
-      <button type="button" class="icon-close">Закрыть</button>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" name="feedback">
+        <p>
+          <label for="feedback-name">Ваше имя:</label>
+          <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" minlength="3" required>
+        </p>
+        <p>
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input type="email" name="email" id="feedback-email" placeholder="email@example.com" required>
+        </p>
+        <p>
+          <label for="feedback-body">Текст письма:</label>
+          <textarea name="body" id="feedback-body" required>
+            В свободной форме
+          </textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button" class="icon-close" aria-label="Закрыть"></button>
     </section>
 
     <section>
-      <h2>Форма авторизации в личный кабинет</h2>
-      <!-- Здесь будет форма авторизации в личный кабинет -->
-      <button type="button" class="icon-close">Закрыть</button>
+      <h2 class="visually-hidden">Форма авторизации в личный кабинет</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" name="authorize">
+        <p>
+          <label for="authorize-login">Логин:</label>
+          <input type="email" name="login" id="authorize-login" placeholder="email@example.com" required>
+        </p>
+        <p>
+          <label for="authorize-password">Пароль:</label>
+          <input type="password" name="password" id="authorize-password" placeholder="••••••••" required>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="remember">
+            Запомнить меня
+          </label>
+          <a href="#">Я забыл пароль</a>
+        </p>
+        <button type="submit">Войти</button>
+      </form>
+      <button type="button" class="icon-close" aria-label="Закрыть"></button>
     </section>
     <script src="js/script.js"></script>
   </body>
