@@ -3,72 +3,73 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт: главная</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <div>
-        <a>
+    <header class="main-header">
+      <div class="menu">
+        <a class="menu__logo">
           <img src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт">
         </a>
         <form action="https://echo.htmlacademy.ru" method="post" name="search">
-          <input type="text" name="search" id="search-field" class="icon-search" placeholder="Поиск:" minlength="3" required>
+          <input class="menu__search-field icon-search" type="text" name="search" id="search-field" placeholder="Поиск:" minlength="3" required>
           <label for="search-field" class="visually-hidden">Поиск</label>
           <button type="submit" class="visually-hidden">Отправить</button>
         </form>
         <!-- ссылка на страницу закладок -->
-        <a href="#" class="icon-bookmark">
+        <a href="#" class="menu__bookmark icon-bookmark">
           Закладки:
           <span>0</span>
         </a>
         <!-- ссылка на страницу с содержимым корзины -->
-        <a href="#" class="icon-cart">
+        <a href="#" class="menu__cart icon-cart">
           Корзина:
           <span>0</span>
         </a>
-        <a href="#">Оформить заказ</a>
+        <a class="menu__order" href="#">Оформить заказ</a>
       </div>
-      <div>
-        <span>
+      <div class="navigation">
+        <span class="headline">
           Интернет-магазин строительных материалов и инструментов для ремонта
         </span>
-        <span>
-          <a href="tel:+78125550555" class="icon-phone">
+        <span class="site-contacts">
+          <a href="tel:+78125550555" class="site-contacts__phone icon-phone">
             +7 (812) 555-05-55
           </a>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </span>
-        <ul>
+        <ul class="user-nav">
           <li>
-            <a href="#" class="icon-login">Войти</a>
+            <a class="user-nav__link icon-login" href="#">Войти</a>
           </li>
           <li>
-            <a href="#">Регистрация</a>
+            <a class="user-nav__link" href="#">Регистрация</a>
           </li>
         </ul>
-        <nav>
-          <ul>
-            <li>
-              <a>Главная</a>
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link">Главная</a>
             </li>
-            <li>
-              <a href="#">Компания</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Компания</a>
             </li>
-            <li>
-              <a href="catalog.html">Каталог</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
             </li>
-            <li>
-              <a href="#">Новости</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Новости</a>
             </li>
-            <li>
-              <a href="#">Спецпредложения</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Спецпредложения</a>
             </li>
-            <li>
-              <a href="#">Доставка</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Доставка</a>
             </li>
-            <li>
-              <a href="#">Контакты</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
