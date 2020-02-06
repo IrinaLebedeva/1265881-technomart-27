@@ -486,6 +486,41 @@ a {
   opacity: 0.3;
 }
 
+/* pagination */
+.pagination {
+  list-style: none;
+}
+
+.pagination__link {
+  line-height: 1.38;
+  color: #000000;
+  text-transform: uppercase;
+
+  border: solid 1px #e5e5e5;
+}
+
+.pagination__link:hover,
+.pagination__link:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+  border: solid 1px #bdc6ca;
+}
+
+.pagination__link:active {
+  color: #000000;
+  
+  background-color: #ffffff;
+  border: solid 1px #ee3643;
+}
+
+.pagination__link--current {
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border: none;
+}
+
 /* delivery section */
 .delivery__list {
   list-style: none;
