@@ -53,7 +53,6 @@ a {
 
 .page-title--with-bg {
   padding-top: 32px;
-  padding-right: 30px;
   padding-bottom: 32px;
   padding-left: 30px;
 
@@ -67,6 +66,14 @@ a {
   line-height: 1;
   color: #000000;
   text-transform: uppercase;
+}
+
+.title--with-bg {
+  padding-top: 33px;
+  padding-bottom: 35px;
+  padding-left: 30px;
+
+  background-color: #f2f6f8;
 }
 
 .button {
@@ -296,6 +303,159 @@ a {
 .breadcrumbs__link:active {
   line-height: 1.38;
   text-transform: uppercase;
+}
+
+/* categories */
+.categories {
+  font-family: 'Cuprum', Arial, sans-serif;
+  color: #ffffff;
+}
+
+.categories__title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.categories__link-wrapper {
+  opacity: 0.1;
+  background-color: #000000;
+}
+
+.categories__link {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.categories--materials {
+  background-color: #ffbf47;
+}
+
+.categories--tools {
+  background-color: #3bbce3;
+}
+
+.categories--equipment {
+  background-color: #dc91d8;
+}
+
+.categories--full-cart {
+  background-color: #8ed78f;
+}
+
+.categories--delivery {
+  background-color: #ffc047;
+}
+
+/* slider */
+.slider {
+  font-family: 'Cuprum', Arial, sans-serif;
+  color: #ffffff;
+}
+
+.slider__title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.slider__text {
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.slider__item--drill {
+  background-color: #bea591;
+  background-image: url("/img/slider-advantages-1.jpg");
+
+}
+
+.slider__item--perforator {
+  background-color: #ccbdaf;
+  background-image: url("/img/slider-advantages-2.jpg");
+}
+
+/* goods */
+.goods {
+  list-style: none;
+
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.goods__link,
+.goods__link:hover,
+.goods__link:focus,
+.goods__link:active {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.11;
+  color: #000000;
+}
+
+.goods__title {
+  font-size: inherit;
+  margin: 0;
+}
+
+.goods__old-price {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.06;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.goods__price {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.06;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.catalog-button {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+}
+
+.catalog-button__buy {
+  color: #ffffff;
+
+  background-color: #63a63e;
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.catalog-button__buy:hover,
+.catalog-button__buy:focus {
+  background-color: #5fbb2d;
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.catalog-button__buy:active {
+  background-color: #518534;
+}
+
+.catalog-button__bookmark {
+  color: #32425c;
+
+  border: solid 3px #63a63e;
+}
+
+.catalog-button__bookmark:hover,
+.catalog-button__bookmark:focus {
+  border: solid 3px #32425c;
+}
+
+.catalog-button__bookmark:active {
+  color: rgba(50, 66, 92, 0.3);
+
+ /* zeplin - как взять цвет бордера? */
 }
 
 /* delivery section */
