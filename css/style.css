@@ -472,8 +472,18 @@ a {
   list-style: none;
 }
 
-.brands__link {
+.brands__item {
+  width: 220px;
+  height: 145px;
+}
 
+.brands__item:hover,
+.brands__item:focus,
+.brands__item:active {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+.brands__item:active {
+  opacity: 0.3;
 }
 
 /* delivery section */
