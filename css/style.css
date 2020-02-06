@@ -76,6 +76,17 @@ a {
   background-color: #f2f6f8;
 }
 
+.title--main-color {
+  color: #000000;
+}
+
+.sub-title {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  color: #32425c;
+}
+
 .button {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
@@ -83,6 +94,7 @@ a {
   color: #ffffff;
   text-transform: uppercase;
 
+  border: none;
   background-color: #ee3643;
 }
 
@@ -431,6 +443,8 @@ a {
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
+
+  border: none;
 }
 
 .catalog-button__buy {
@@ -509,7 +523,7 @@ a {
 
 .pagination__link:active {
   color: #000000;
-  
+
   background-color: #ffffff;
   border: solid 1px #ee3643;
 }
@@ -519,6 +533,64 @@ a {
 
   background-color: #ee3643;
   border: none;
+}
+
+/* info */
+.info {
+  background-color: #f4f7f9;
+}
+
+/* services */
+.services {
+  background-color: #f4f7f9;
+}
+
+.services__list {
+  list-style: none;
+
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.43;
+}
+
+.services__button {
+  color: #ffffff;
+  border: none;
+  background-color: #32425c;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+}
+
+.services__button:hover,
+.services__button:focus,
+.services__button:active {
+  color: #ffffff;
+  background-color: #293449;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+}
+
+.services__button--active {
+  color: #32425c;
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0.6px 0.8px 0 0 #ffffff;
+}
+
+/* services information list */
+.info-list {
+  list-style: none;
+}
+
+.info-list__item--delivery {
+  background-image: url("img/slider-services-delivery.png");
+}
+
+.info-list__item--guarantee {
+  background-image: url("img/slider-services-guarantee.png");
+}
+
+.info-list__item--credit {
+  background-image: url("img/slider-services-credit.png");
 }
 
 /* delivery section */
