@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт: главная</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -109,8 +109,8 @@
           <button type="button" class="icon-left" aria-label="Назад"></button>
           <button type="button" class="icon-right" aria-label="Вперёд"></button>
           <div class="slider-nav">
-            <button type="button" class="slider-nav-elem slider-nav-elem--active" aria-label="Переход к слайду о дрелях"></button>
-            <button type="button" class="slider-nav-elem" aria-label="Переход к слайду о перфораторах"></button>
+            <button type="button" class="slider-nav__item slider-nav__item--active" aria-label="Переход к слайду о дрелях"></button>
+            <button type="button" class="slider-nav__item" aria-label="Переход к слайду о перфораторах"></button>
           </div>
         </div>
         <ul>
@@ -301,13 +301,13 @@
           Техномарт работает со многими транспортными компаниями:
         </p>
         <ul class="delivery__list">
-          <li>
+          <li class="delivery__item">
             Деловые линии
           </li>
-          <li>
+          <li class="delivery__item">
             Автотрейдинг
           </li>
-          <li>
+          <li class="delivery__item">
             ЖелДорЭкспедиция
           </li>
         </ul>
@@ -378,13 +378,13 @@
         </p>
         <ul class="networks">
           <li>
-            <a class="networks__link icon-vk" href="#" aria-label="Вконтакте"></a>
+            <a class="networks__link networks__link--icon-vk" href="#" aria-label="Вконтакте"></a>
+          </li>
+          <li class="networks__item networks__item--icon-fb">
+            <a class="networks__link" href="#" aria-label="Фейсбук"></a>
           </li>
           <li>
-            <a class="networks__link icon-fb" href="#" aria-label="Фейсбук"></a>
-          </li>
-          <li>
-            <a class="networks__link icon-insta" href="#" aria-label="Инстаграм"></a>
+            <a class="networks__link networks__link--icon-insta" href="#" aria-label="Инстаграм"></a>
           </li>
         </ul>
         <p>
