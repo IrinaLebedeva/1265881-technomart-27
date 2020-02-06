@@ -55,7 +55,7 @@ a {
   background-color: #f2f6f8;
 }
 
-.h2 {
+.title {
   font-size: 30px;
   font-weight: normal;
   line-height: 1;
@@ -82,37 +82,37 @@ a {
 }
 
 /* main-header menu */
-.main-header  .menu {
+.main-menu {
   background-color: #293449;
 }
 
-.main-header .menu__logo {
+.main-menu__logo {
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
-.main-header .menu__logo:hover,
-.main-header .menu__logo:focus {
+.main-menu__logo:hover,
+.main-menu__logo:focus {
   background-color: #ca2c37;
 }
 
-.main-header .menu__logo:hover,
-.main-header .menu__logo:focus {
+.main-menu__logo:hover,
+.main-menu__logo:focus {
   background-color: #ba2732;
 }
 
-.main-header .menu__search-field {
+.main-menu__search-field {
   background-color: #293449;
   border: none;
 }
 
-.main-header .menu__search-field::placeholder {
+.main-menu__search-field::placeholder {
   font-size: 17px;
   line-height: 1.06;
   color: #ffffff;
 }
 
-.main-header .menu__search-field:focus {
+.main-menu__search-field:focus {
   font-size: 17px;
   line-height: 1.06;
   color: #000000;
@@ -120,57 +120,60 @@ a {
   background-color: #ffffff;
 }
 
-.main-header .menu__bookmark,
-.main-header .menu__cart,
-.main-header .menu__order {
+.main-menu__bookmark,
+.main-menu__cart,
+.main-menu__order {
   font-size: 17px;
   line-height: 1.06;
   color: #ffffff;
 }
-.main-header .menu__bookmark:hover,
-.main-header .menu__bookmark:focus,
-.main-header .menu__cart:hover,
-.main-header .menu__cart:focus {
+
+.main-menu__bookmark:hover,
+.main-menu__bookmark:focus,
+.main-menu__cart:hover,
+.main-menu__cart:focus {
   color: rgba(255, 255, 255, 0.6);
   background-color: #161d29;
 }
-.main-header .menu__cart--not-empty {
+
+.main-menu__cart--not-empty {
   background-color: #ee3643;
 }
 
-.main-header .menu__order {
+.main-menu__order {
   background-color: #63a63e;
 }
 
-.main-header .menu__order:hover,
-.main-header .menu__order:focus {
+.main-menu__order:hover,
+.main-menu__order:focus {
   background-color: #5fbb2d;
 }
 
-.main-header .menu__order:active {
+.main-menu__order:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #518534;
 }
 
-/* main-header navigation */
-.main-header .navigation {
+/* navigation */
+.navigation {
   background-color: #f4f7f9;
 }
-/* main-header site contacts */
-.main-header .headline {
+
+.navigation__headline {
   font-size: 16px;
   font-style: italic;
   line-height: 1.44;
   color: #ee3643;
 }
 
-.main-header .site-contacts {
+/* site-contacts */
+.site-contacts {
   font-size: 14px;
   line-height: 1.71;
   color: #32425c;
 }
 
-.main-header .site-contacts__phone {
+.site-contacts__phone {
   font-size: 21px;
   letter-spacing: 0.42px;
   color: #e9292a;
@@ -178,34 +181,34 @@ a {
   border: solid 3px #ffffff;
 }
 
-.main-header .site-contacts__phone:hover,
-.main-header .site-contacts__phone:focus,
-.main-header .site-contacts__phone:active {
+.site-contacts__phone:hover,
+.site-contacts__phone:focus,
+.site-contacts__phone:active {
   color: #e9292a;
 }
 
-/* main-header user navigation */
-.main-header .user-nav {
+/* user navigation */
+.user-nav {
   list-style: none;
 }
-.main-header .user-nav__link {
+.user-nav__link {
   font-size: 21px;
   color: #000000;
 
   background-color: #ffffff;
 }
 
-.main-header .user-nav__link:hover,
-.main-header .user-nav__link:focus {
+.user-nav__link:hover,
+.user-nav__link:focus {
   color: #ee3643;
 }
 
-.main-header .user-nav__link:active {
+.user-nav__link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* main-header site navigation */
-.main-header .site-nav {
+/* site navigation */
+.site-nav {
   font-size: 17px;
   color: #ffffff;
 
@@ -214,21 +217,21 @@ a {
   box-shadow: inset 0px -5px 0 0 #293449;
 }
 
-.main-header .site-nav__list {
+.site-nav__list {
   list-style: none;
 }
 
-.main-header .site-nav__link {
+.site-nav__link {
   color: #ffffff;
 }
 
-.main-header .site-nav__link:hover,
-.main-header .site-nav__link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: #ffffff;
   background-color: #293449;
 }
 
-.main-header .site-nav__link:active {
+.site-nav__link:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
@@ -277,64 +280,71 @@ a {
   color: #000000;
 }
 
-/* main footer */
-.main-footer .menu,
-.main-footer .navigation {
+/* sub-menu */
+.sub-menu {
   font-size: 18px;
   line-height: 1.33;
 
   background-color: #32425c;
 }
 
-.main-footer .menu__logo {
+.sub-menu__logo {
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
-.main-footer .menu-nav {
+.sub-menu__list {
   list-style: none;
 }
 
-.main-footer .menu-nav__link {
+.sub-menu__link {
   color: #f1f5f7;
 }
 
-.main-footer .menu-nav__link:hover,
-.main-footer .menu-nav__link:focus {
+.sub-menu__link:hover,
+.sub-menu__link:focus {
   text-decoration: underline;
 }
 
-.main-footer .menu-nav__link:active {
+.sub-menu__link:active {
   color: rgba(241, 245, 247, 0.5);
 }
 
-.main-footer .navigation,
-.main-footer .navigation__phone,
-.main-footer .navigation__phone:hover,
-.main-footer .navigation__phone:focus,
-.main-footer .navigation__phone:active {
+/* sub-nav */
+.sub-nav {
+  font-size: 18px;
+  line-height: 1.33;
+
+  background-color: #32425c;
+}
+
+.sub-nav,
+.sub-nav__phone,
+.sub-nav__phone:hover,
+.sub-nav__phone:focus,
+.sub-nav__phone:active {
   color: #f3f7f9;
 }
 
-.main-footer .navigation__list {
+.sub-nav__list {
   list-style: none;
 }
 
-.main-footer .navigation__link {
+.sub-nav__link {
   color: #ffd180;
 }
 
-.main-footer .navigation__link:hover,
-.main-footer .navigation__link:focus {
+.sub-nav__link:hover,
+.sub-nav__link:focus {
   text-decoration: underline;
 }
 
-.main-footer .navigation__link:active {
+.sub-nav__link:active {
   color: rgba(255, 209, 128, 0.5);
 }
 
-/* main footer panel */
-.main-footer .panel {
+/* panel */
+.panel {
   font-size: 16px;
   line-height: 1.13;
   color: #ffffff;
@@ -342,16 +352,17 @@ a {
   background-color: #32425c;
 }
 
-.main-footer .networks {
+.panel__link {
+  color: #ffd180;
+}
+
+/* networks */
+.networks {
   list-style: none;
 }
 
-.main-footer .networks__link {
+.networks__link {
   background-color: #212a3a;
-}
-
-.main-footer .panel__link {
-  color: #ffd180;
 }
 
 /* modal */
