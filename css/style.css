@@ -95,6 +95,10 @@ a {
   text-transform: uppercase;
 }
 
+.inner-title--with-bg {
+  background-color: #f7f3ec;
+}
+
 .button {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
@@ -632,10 +636,6 @@ a {
 }
 
 /* filter */
-.filter--with-bg {
-  background-color: #f7f3ec;
-}
-
 .filter__fieldset {
   border: none;
 }
@@ -645,6 +645,14 @@ a {
   font-weight: bold;
   line-height: 1.76;
   text-transform: uppercase;
+}
+
+.filter__track {
+  background-color: #f7f3ec;
+}
+
+.filter__track_values {
+  background-color: #f7f3ec;
 }
 
 .filter__list {
@@ -675,6 +683,10 @@ a {
 }
 
 /* sort */
+.sort--with-bg {
+  background-color: #f7f3ec;
+}
+
 .sort__list {
   list-style: none;
 }
