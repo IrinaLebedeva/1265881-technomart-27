@@ -471,9 +471,12 @@ a {
 
 .catalog-button__bookmark {
   color: #32425c;
+  text-transform: uppercase;
 
   background-color: #ffffff;
   border: solid 3px #63a63e;
+
+  outline: none;
 }
 
 .catalog-button__bookmark:hover,
@@ -482,9 +485,7 @@ a {
 }
 
 .catalog-button__bookmark:active {
-  color: rgba(50, 66, 92, 0.3);
-
- /* zeplin - как взять цвет бордера? */
+  opacity: 0.3;
 }
 
 /* brands */
