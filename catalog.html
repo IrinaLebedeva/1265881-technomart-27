@@ -97,82 +97,82 @@
           <a class="breadcrumbs__link">Перфораторы</a>
         </li>
       </ul>
-      <section>
-        <h2>Фильтр</h2>
-        <form action="https://echo.htmlacademy.ru" method="post" name="filter">
-          <fieldset>
-            <legend>Цена:</legend>
-            <div class="range-track">
-              <div class="range-track-pin range-track-pin-min"></div>
-              <div class="range-track-pin range-track-pin-max"></div>
+      <section class="filters">
+        <h2 class="inner-title">Фильтр:</h2>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="post" name="filter">
+          <fieldset class="filter__fieldset">
+            <legend class="filter__title filter--with-bg">Цена:</legend>
+            <div class="filter__track track filter--with-bg">
+              <div class="track__pin track__pin--min"></div>
+              <div class="track__pin track__pin--max"></div>
             </div>
-            <p>
+            <p class="filter--with-bg">
               <input type="number" name="price-min" id="price-min" value="0" min="0" max="30000">
               <label for="price-min" class="visually-hidden">Минимальная цена</label>
               <input type="number" name="price-max" id="price-max" value="30000" min="0" max="30000">
               <label for="price-max" class="visually-hidden">Максимальная цена</label>
             </p>
           </fieldset>
-          <fieldset>
-            <legend>Производители:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="bosch" id="filter-bosch" checked>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__title">Производители:</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <input class="filter__input filter__input--checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
                 <label for="filter-bosch">Bosch</label>
               </li>
-              <li>
-                <input type="checkbox" name="interscol" id="filter-interscol">
+              <li class="filter__item">
+                <input class="filter__input filter__input--checkbox" type="checkbox" name="interscol" id="filter-interscol">
                 <label for="filter-interscol">Интерскол</label>
               </li>
-              <li>
-                <input type="checkbox" name="makita" id="filter-makita" checked>
+              <li class="filter__item">
+                <input class="filter__input filter__input--checkbox" type="checkbox" name="makita" id="filter-makita" checked>
                 <label for="filter-makita">Makita</label>
               </li>
-              <li>
-                <input type="checkbox" name="dewalt" id="filter-dewalt">
+              <li class="filter__item">
+                <input class="filter__input filter__input--checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
                 <label for="filter-dewalt">Dewalt</label>
               </li>
-              <li>
-                <input type="checkbox" name="hitachi" id="filter-hitachi">
+              <li class="filter__item">
+                <input class="filter__input filter__input--checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
                 <label for="filter-hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Питание:</legend>
-            <ul>
-              <li>
-                <input type="radio" name="power" value="batery" id="power-batery" checked>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__title">Питание:</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <input class="filter__input filter__input--radio" type="radio" name="power" value="batery" id="power-batery" checked>
                 <label for="power-batery">Аккумуляторные</label>
               </li>
-              <li>
-                <input type="radio" name="power" value="electrical-network" id="power-electrical-network">
+              <li class="filter__item">
+                <input class="filter__input filter__input--radio" type="radio" name="power" value="electrical-network" id="power-electrical-network">
                 <label for="power-electrical-network">Сетевые</label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="filter__button" type="submit">Показать</button>
         </form>
       </section>
-      <section>
-        <h2>Сортировка</h2>
-        <ul>
-          <li>
-            <a>По цене</a>
+      <section class="sort">
+        <h2 class="inner-title">Сортировка:</h2>
+        <ul class="sort__list sort__list--with-bg">
+          <li class="sort__item">
+            <a class="sort__link sort__link--current">По цене</a>
           </li>
-          <li>
-            <a href="catalog.html?sort=by_type">По типу</a>
+          <li class="sort__item">
+            <a class="sort__link" href="catalog.html?sort=by_type">По типу</a>
           </li>
-          <li>
-            <a href="catalog.html?sort=by_func">По функционалу</a>
+          <li class="sort__item">
+            <a class="sort__link" href="catalog.html?sort=by_func">По функционалу</a>
           </li>
         </ul>
-        <ul>
-          <li class="icon-up-dir">
-            <a>По возрастанию</a>
+        <ul class="sort__list-order list-order">
+          <li>
+            <a class="list-order__link list-order__link--up" aria-label="По возрастанию"></a>
           </li>
-          <li class="icon-down-dir">
-            <a href="catalog.html?sort_order=desc">По убыванию</a>
+          <li>
+            <a class="list-order__link list-order__link--down" href="catalog.html?sort_order=desc" aria-label="По убыванию"></a>
           </li>
         </ul>
       </section>

@@ -87,6 +87,14 @@ a {
   color: #32425c;
 }
 
+.inner-title {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.38;
+  color: #000000;
+  text-transform: uppercase;
+}
+
 .button {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
@@ -313,6 +321,7 @@ a {
 .breadcrumbs__link:hover,
 .breadcrumbs__link:focus,
 .breadcrumbs__link:active {
+  color: #000000;
   line-height: 1.38;
   text-transform: uppercase;
 }
@@ -329,17 +338,13 @@ a {
   line-height: 1.25;
 }
 
-.categories__link-wrapper {
-  opacity: 0.1;
-  background-color: #000000;
-}
-
 .categories__link {
   font-size: 14px;
   line-height: 1.29;
   color: #ffffff;
   text-transform: uppercase;
-  opacity: 1;
+
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .categories--materials {
@@ -467,6 +472,7 @@ a {
 
 .catalog-button__buy:active {
   background-color: #518534;
+  box-shadow: none;
 }
 
 .catalog-button__bookmark {
@@ -623,6 +629,87 @@ a {
   font-weight: normal;
   line-height: 1.85;
   color: #000000;
+}
+
+/* filter */
+.filter--with-bg {
+  background-color: #f7f3ec;
+}
+
+.filter__fieldset {
+  border: none;
+}
+
+.filter__title {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.76;
+  text-transform: uppercase;
+}
+
+.filter__list {
+  list-style: none;
+}
+
+.filter__input + label,
+.filter__input:hover + label,
+.filter__input:focus + label {
+  font-size: 15px;
+  line-height: 1.33;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter__input:disabled + label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.filter__button {
+  font-size: 13px;
+  line-height: 1.38;
+  color: #000000;
+  text-transform: uppercase;
+
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+}
+
+/* sort */
+.sort__list {
+  list-style: none;
+}
+
+.sort__list--with-bg {
+  background-color: #f7f3ec;
+}
+
+.sort__item {
+  font-size: 13px;
+  line-height: 1.38;
+  text-transform: uppercase;
+}
+
+.sort__link {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort__link:hover,
+.sort__link:focus,
+.sort__link:active {
+  color: #000000;
+}
+
+.sort__link--current,
+.sort__link--current:hover,
+.sort__link--current:focus,
+.sort__link--current:active {
+  color: #ee3643;
+  border-bottom: none;
+}
+
+.list-order {
+  list-style: none;
 }
 
 /* main-footer */
