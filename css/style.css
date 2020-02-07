@@ -379,15 +379,20 @@ a {
   line-height: 1.33;
 }
 
+.slider__item {
+  width: 620px;
+  height: 266px;
+  background-repeat: no-repeat;
+}
+
 .slider__item--drill {
   background-color: #bea591;
-  background-image: url("/img/slider-advantages-1.jpg");
-
+  background-image: url("../img/slider-advantages-1.jpg");
 }
 
 .slider__item--perforator {
   background-color: #ccbdaf;
-  background-image: url("/img/slider-advantages-2.jpg");
+  background-image: url("../img/slider-advantages-2.jpg");
 }
 
 /* goods */
@@ -581,16 +586,21 @@ a {
   list-style: none;
 }
 
+.info-list__item {
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
 .info-list__item--delivery {
-  background-image: url("img/slider-services-delivery.png");
+  background-image: url("../img/slider-services-delivery.png");
 }
 
 .info-list__item--guarantee {
-  background-image: url("img/slider-services-guarantee.png");
+  background-image: url("../img/slider-services-guarantee.png");
 }
 
 .info-list__item--credit {
-  background-image: url("img/slider-services-credit.png");
+  background-image: url("../img/slider-services-credit.png");
 }
 
 /* delivery section */
