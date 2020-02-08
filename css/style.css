@@ -64,7 +64,7 @@ a {
   font-size: 30px;
   font-weight: normal;
   line-height: 1;
-  color: #000000;
+  color: #32425c;
   text-transform: uppercase;
 }
 
@@ -73,7 +73,7 @@ a {
   padding-bottom: 35px;
   padding-left: 30px;
 
-  background-color: #f2f6f8;
+  background-color: #f9f5f0;
 }
 
 .title--main-color {
@@ -83,8 +83,10 @@ a {
 .sub-title {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 36px;
+  font-weight: normal;
   line-height: 1;
   color: #32425c;
+  text-transform: uppercase;
 }
 
 .inner-title {
@@ -99,24 +101,66 @@ a {
   background-color: #f7f3ec;
 }
 
+/* buttons */
 .button {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   line-height: 1.29;
-  color: #ffffff;
   text-transform: uppercase;
 
   border: none;
+}
+
+.button--primary {
+  color: #ffffff;
+
   background-color: #ee3643;
 }
 
-.button:hover,
-.button:focus {
+.button--primary:hover,
+.button--primary:focus {
   background-color: #ca2c37;
 }
 
-.button:active {
+.button--primary:active {
   background-color: #ba2732;
+}
+
+.button--accent {
+  color: #ffffff;
+
+  background-color: #63a63e;
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.button--accent:hover,
+.button--accent:focus {
+  background-color: #5fbb2d;
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.button--accent:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.button--secondary {
+  color: #32425c;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  border: solid 3px #63a63e;
+
+  outline: none;
+}
+
+.button--secondary:hover,
+.button--secondary:focus {
+  border: solid 3px #32425c;
+}
+
+.button--secondary:active {
+  opacity: 0.3;
 }
 
 /* main-header */
@@ -321,10 +365,7 @@ a {
   list-style: none;
 }
 
-.breadcrumbs__link,
-.breadcrumbs__link:hover,
-.breadcrumbs__link:focus,
-.breadcrumbs__link:active {
+.breadcrumbs__link {
   color: #000000;
   line-height: 1.38;
   text-transform: uppercase;
@@ -351,23 +392,23 @@ a {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.categories--materials {
+.categories__item--materials {
   background-color: #ffbf47;
 }
 
-.categories--tools {
+.categories__item--tools {
   background-color: #3bbce3;
 }
 
-.categories--equipment {
+.categories__item--equipment {
   background-color: #dc91d8;
 }
 
-.categories--full-cart {
+.categories__item--full-cart {
   background-color: #8ed78f;
 }
 
-.categories--delivery {
+.categories__item--delivery {
   background-color: #ffc047;
 }
 
@@ -450,52 +491,6 @@ a {
   color: #ffffff;
 
   background-color: #ee3643;
-}
-
-.catalog-button {
-  font-family: 'Cuprum', Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.29;
-  text-transform: uppercase;
-
-  border: none;
-}
-
-.catalog-button__buy {
-  color: #ffffff;
-
-  background-color: #63a63e;
-  box-shadow: inset 0px -3px 0 0 #367315;
-}
-
-.catalog-button__buy:hover,
-.catalog-button__buy:focus {
-  background-color: #5fbb2d;
-  box-shadow: inset 0px -3px 0 0 #367315;
-}
-
-.catalog-button__buy:active {
-  background-color: #518534;
-  box-shadow: none;
-}
-
-.catalog-button__bookmark {
-  color: #32425c;
-  text-transform: uppercase;
-
-  background-color: #ffffff;
-  border: solid 3px #63a63e;
-
-  outline: none;
-}
-
-.catalog-button__bookmark:hover,
-.catalog-button__bookmark:focus {
-  border: solid 3px #32425c;
-}
-
-.catalog-button__bookmark:active {
-  opacity: 0.3;
 }
 
 /* brands */

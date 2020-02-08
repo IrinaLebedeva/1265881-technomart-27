@@ -80,15 +80,15 @@
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantages__categories categories">
-          <li class="categories categories--materials">
+          <li class="categories__item categories__item--materials">
             <span class="categories__title">Материалы</span>
             <a class="categories__link" href="catalog.html?category=materials">на любой вкус</a>
           </li>
-          <li class="categories categories--tools">
+          <li class="categories__item categories__item--tools">
             <span class="categories__title">Инструмент</span>
             <a class="categories__link" href="catalog.html?category=tools">на все случаи</a>
           </li>
-          <li class="categories categories--equipment">
+          <li class="categories__item categories__item--equipment">
             <span class="categories__title">Техника</span>
             <a class="categories__link" href="catalog.html?category=equipment">для стройки</a>
           </li>
@@ -98,12 +98,12 @@
             <span class="slider__title">Дрели</span>
             <p class="slider__text">Соседям на радость!</p>
             <!-- ссылки дублируются в каждом слайде, т.к. в будущем могут вести на разные страницы -->
-            <a class="button" href="catalog.html">Открыть каталог</a>
+            <a class="button button--primary" href="catalog.html">Открыть каталог</a>
           </div>
           <div class="slider__item slider__item--perforator">
             <span class="slider__title">Перфораторы</span>
             <p class="slider__text">Настоящие мужские игрушки</p>
-            <a class="button" href="catalog.html">Открыть каталог</a>
+            <a class="button button--primary" href="catalog.html">Открыть каталог</a>
           </div>
           <button type="button" class="slider__arrow-nav slider__arrow-nav--left" aria-label="Назад"></button>
           <button type="button" class="slider__arrow-nav slider__arrow-nav--right" aria-label="Вперёд"></button>
@@ -112,12 +112,12 @@
             <button type="button" class="dot-nav__item" aria-label="Переход к слайду о перфораторах"></button>
           </div>
         </div>
-        <ul class="advantages__categories-vertical categories-vertical categories">
-          <li class="categories categories--full-cart">
+        <ul class="advantages__categories-vertical categories">
+          <li class="categories__item categories__item--full-cart">
             <span class="categories__title">Скидки 50%</span>
             <a class="categories__link" href="catalog.html?filter=with_discount">на 350 товаров</a>
           </li>
-          <li class="categories categories--delivery">
+          <li class="categories__item categories__item--delivery">
             <span class="categories__title">Доставка</span>
             <!-- Ссылка на страницу с подробным описанием условий доставки -->
             <a class="categories__link" href="#">бесплатно</a>
@@ -126,7 +126,7 @@
       </section>
       <section class="catalog">
         <h2 class="title title--with-bg">Популярные товары:</h2>
-        <a class="button" href="catalog.html?filter=popular">все популярные товары</a>
+        <a class="button button--primary" href="catalog.html?filter=popular">все популярные товары</a>
         <ul class="catalog__goods goods">
           <li class="goods__item">
             <!-- ссылка на детальную страницу товара -->
@@ -142,10 +142,10 @@
               <span class="visually-hidden">новая цена</span>
               25500 р.
             </p>
-            <div class="goods__catalog-button catalog-button">
+            <div class="goods__buttons">
               <!-- при открытии страницы в отдельной вкладке переход на страницу оформления заказа -->
-              <a class="catalog-button__buy" href="#">Купить</a>
-              <button class="catalog-button__bookmark" type="button">В закладки</button>
+              <a class="button button--accent" href="#">Купить</a>
+              <button class="button button--secondary" type="button">В закладки</button>
             </div>
           </li>
           <li class="goods__item">
@@ -161,10 +161,10 @@
               <span class="visually-hidden">новая цена</span>
               15500 р.
             </p>
-            <div class="goods__catalog-button catalog-button">
+            <div class="goods__buttons">
               <!-- при открытии страницы в отдельной вкладке переход на страницу оформления заказа -->
-              <a class="catalog-button__buy" href="#">Купить</a>
-              <button class="catalog-button__bookmark" type="button">В закладки</button>
+              <a class="button button--accent" href="#">Купить</a>
+              <button class="button button--secondary" type="button">В закладки</button>
             </div>
           </li>
           <li class="goods__item">
@@ -180,10 +180,10 @@
               <span class="visually-hidden">новая цена</span>
               25500 р.
             </p>
-            <div class="goods__catalog-button catalog-button">
+            <div class="goods__buttons">
               <!-- при открытии страницы в отдельной вкладке переход на страницу оформления заказа -->
-              <a class="catalog-button__buy" href="#">Купить</a>
-              <button class="catalog-button__bookmark" type="button">В закладки</button>
+              <a class="button button--accent" href="#">Купить</a>
+              <button class="button button--secondary" type="button">В закладки</button>
             </div>
           </li>
           <li class="goods__item">
@@ -195,17 +195,17 @@
               <span class="visually-hidden">цена</span>
               12500 р.
             </p>
-            <div class="goods__catalog-button catalog-button">
+            <div class="goods__buttons">
               <!-- при открытии страницы в отдельной вкладке переход на страницу оформления заказа -->
-              <a class="catalog-button__buy" href="#">Купить</a>
-              <button class="catalog-button__bookmark" type="button">В закладки</button>
+              <a class="button button--accent" href="#">Купить</a>
+              <button class="button button--secondary" type="button">В закладки</button>
             </div>
           </li>
         </ul>
       </section>
       <section class="brands">
         <h2 class="title title--with-bg">Популярные производители:</h2>
-        <a class="button" href="#">Все производители</a>
+        <a class="button button--primary" href="#">Все производители</a>
         <ul class="brands__list">
           <li class="brands__item">
             <a class="brands__link" href="#">
@@ -213,37 +213,37 @@
             </a>
           </li>
           <li class="brands__item">
-            <a class="brands__list" href="#">
+            <a class="brands__link" href="#">
               <img src="img/uploads/manufacturer/makita.png" width="220" height="145" alt="Makita">
             </a>
           </li>
           <li class="brands__item">
-            <a class="brands__list" href="#">
+            <a class="brands__link" href="#">
               <img src="img/uploads/manufacturer/dewalt.png" width="220" height="145" alt="Dewalt">
             </a>
           </li>
           <li class="brands__item">
-            <a class="brands__list" href="#">
+            <a class="brands__link" href="#">
               <img src="img/uploads/manufacturer/interscol.png" width="220" height="145" alt="Интерскол">
             </a>
           </li>
           <li class="brands__item">
-            <a class="brands__list" href="#">
+            <a class="brands__link" href="#">
               <img src="img/uploads/manufacturer/hitachi.png" width="220" height="145" alt="Hitachi">
             </a>
           </li>
           <li class="brands__item">
-            <a class="brands__list" href="#">
+            <a class="brands__link" href="#">
               <img src="img/uploads/manufacturer/lg.png" width="220" height="145" alt="LG">
             </a>
           </li>
           <li class="brands__item">
-            <a class="brands__list" href="#">
+            <a class="brands__link" href="#">
               <img src="img/uploads/manufacturer/aeg.png" width="220" height="145" alt="AEG">
             </a>
           </li>
           <li class="brands__item">
-            <a class="brands__list" href="#">
+            <a class="brands__link" href="#">
               <img src="img/uploads/manufacturer/metabo.png" width="220" height="145" alt="Metabo">
             </a>
           </li>
@@ -289,7 +289,7 @@
               Кредитные консультанты придут вам на помощь.
             </p>
             <!-- Переход на страницу с формой оформления заявки -->
-            <a class="button" href="#">Отправить заявку</a>
+            <a class="button button--primary" href="#">Отправить заявку</a>
           </li>
         </ul>
       </section>
@@ -313,7 +313,7 @@
             ЖелДорЭкспедиция
           </li>
         </ul>
-        <a class="button" href="#">Подробнее о компании</a>
+        <a class="button button--primary" href="#">Подробнее о компании</a>
       </section>
       <section class="contacts">
         <h2 class="title">Контакты</h2>
@@ -325,7 +325,7 @@
         <a href="#">
           <img src="img/map.jpg" width="300" height="158" alt="Адрес компании Техномарт - г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </a>
-        <button class="button" type="button">Заблудились? Hапишите нам!</button>
+        <button class="button button--primary" type="button">Заблудились? Hапишите нам!</button>
       </section>
     </main>
     <footer class="main-footer">
@@ -353,7 +353,7 @@
       </div>
       <div class="main-footer__sub-nav sub-nav">
         <p>
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           <a class="sub-nav__phone" href="tel:+78125550555">
             +7 (812) 555-05-55
           </a>
@@ -375,7 +375,7 @@
       </div>
       <div class="main-footer__panel panel">
         <p class="panel__copyrights">
-          &copy; 2010-2019 Компания &laquo;Техномарт&raquo;<br>
+          &copy; 2010-2019 Компания &laquo;Техномарт&raquo;
           Все права защищены
         </p>
         <ul class="panel__networks networks">
@@ -390,11 +390,11 @@
           </li>
         </ul>
         <p class="panel__email">
-          Обратная связь:<br>
+          Обратная связь:
           <a class="panel__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="panel__developer">
-          Разработано &mdash;<br>
+          Разработано &mdash;
           <a class="panel__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
         </p>
       </div>
