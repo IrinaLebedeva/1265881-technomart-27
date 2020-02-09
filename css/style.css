@@ -88,8 +88,10 @@ a {
   margin: 0;
 }
 
-.title--main-color {
+.title--info {
   color: #000000;
+  margin-top: 68px;
+  margin-bottom: 38px;
 }
 
 .sub-title {
@@ -487,6 +489,8 @@ a {
 .index-info {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 86px;
+  margin-bottom: 86px;
 }
 
 .index-info__delivery {
@@ -879,6 +883,7 @@ a {
 
 /* info */
 .info-wrapper {
+  border-top: 1px solid transparent;
   background-color: #f4f7f9;
 }
 
@@ -887,7 +892,6 @@ a {
 
   width: 940px;
   margin: 0 auto;
-  padding-top: 67px;
   padding-bottom: 73px;
 }
 
@@ -897,6 +901,7 @@ a {
 
 /* services */
 .services-wrapper {
+  border-top: 1px solid transparent;
   background-color: #f4f7f9;
 }
 
@@ -992,13 +997,15 @@ a {
   line-height: 1.11;
 }
 
+.delivery__text {
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
 /* contacts section */
 .contacts__text {
-  font-family: 'PT Sans', Arial, sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 1.85;
-  color: #000000;
+  margin-top: 0;
+  margin-bottom: 36px;
 }
 
 /* filter */
