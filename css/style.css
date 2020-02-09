@@ -695,6 +695,9 @@ a {
 
   width: 220px;
   margin-bottom: 21px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .goods__item:hover {
@@ -709,6 +712,10 @@ a {
   font-weight: bold;
   line-height: 1.11;
   color: #000000;
+}
+
+.goods__img {
+  order: -1;
 }
 
 .goods__title {
