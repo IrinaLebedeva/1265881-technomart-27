@@ -9,75 +9,81 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__main-menu main-menu">
-        <a class="main-menu__logo">
-          <img src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт">
-        </a>
-        <form action="https://echo.htmlacademy.ru" method="post" name="search">
-          <input class="main-menu__search-field icon icon--search" type="text" name="search" id="search-field" placeholder="Поиск:" minlength="3" required>
-          <label for="search-field" class="visually-hidden">Поиск</label>
-          <button type="submit" class="visually-hidden">Отправить</button>
-        </form>
-        <!-- ссылка на страницу закладок -->
-        <a href="#" class="main-menu__bookmark icon icon--bookmark">
-          Закладки:
-          <span>0</span>
-        </a>
-        <!-- ссылка на страницу с содержимым корзины -->
-        <a href="#" class="main-menu__cart icon icon--cart">
-          Корзина:
-          <span>0</span>
-        </a>
-        <a class="main-menu__order" href="#">Оформить заказ</a>
-      </div>
-      <div class="main-header__navigation navigation">
-        <span class="navigation__headline">
-          Интернет-магазин строительных материалов и инструментов для ремонта
-        </span>
-        <span class="navigation__site-contacts site-contacts">
-          <a href="tel:+78125550555" class="site-contacts__phone icon icon--phone">
-            +7 (812) 555-05-55
+      <div class="main-header__main-menu-wrapper">
+        <div class="main-header__main-menu main-menu">
+          <a class="main-menu__logo">
+            <img src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт">
           </a>
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </span>
-        <ul class="navigation__user-nav user-nav">
-          <li>
-            <a class="user-nav__link icon icon--login" href="#">Войти</a>
-          </li>
-          <li>
-            <a class="user-nav__link" href="#">Регистрация</a>
-          </li>
-        </ul>
-        <nav class="navigation__site-nav site-nav">
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a class="site-nav__link">Главная</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Компания</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="catalog.html">Каталог</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Новости</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Спецпредложения</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Доставка</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+          <form class="main-menu__search" action="https://echo.htmlacademy.ru" method="post" name="search">
+            <input class="main-menu__search-field icon icon--search" type="text" name="search" id="search-field" placeholder="Поиск:" minlength="3" required>
+            <label for="search-field" class="visually-hidden">Поиск</label>
+            <button type="submit" class="visually-hidden">Отправить</button>
+          </form>
+          <!-- ссылка на страницу закладок -->
+          <a href="#" class="main-menu__bookmark icon icon--bookmark">
+            Закладки:
+            <span>0</span>
+          </a>
+          <!-- ссылка на страницу с содержимым корзины -->
+          <a href="#" class="main-menu__cart icon icon--cart">
+            Корзина:
+            <span>0</span>
+          </a>
+          <a class="main-menu__order" href="#">Оформить заказ</a>
+        </div>
+      </div>
+      <div class="main-header__navigation-wrapper">
+        <div class="main-header__navigation navigation">
+          <div class="navigation__wrapper">
+            <span class="navigation__headline">
+              Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
+            </span>
+            <span class="navigation__site-contacts site-contacts">
+              <a href="tel:+78125550555" class="site-contacts__phone icon icon--phone">
+                +7 (812) 555-05-55
+              </a>
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </span>
+            <ul class="navigation__user-nav user-nav">
+              <li class="user-nav__item">
+                <a class="user-nav__link icon icon--login" href="#">Войти</a>
+              </li>
+              <li class="user-nav__item">
+                <a class="user-nav__link" href="#">Регистрация</a>
+              </li>
+            </ul>
+          </div>
+          <nav class="navigation__site-nav site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a class="site-nav__link">Главная</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Компания</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Новости</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Спецпредложения</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Доставка</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
       <h1 class="visually-hidden">Техномарт - интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <section class="advantages">
+      <section class="advantages container">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantages__categories categories">
           <li class="categories__item categories__item--materials">
@@ -93,40 +99,44 @@
             <a class="categories__link" href="catalog.html?category=equipment">для стройки</a>
           </li>
         </ul>
-        <div class="advantages__slider slider">
-          <div class="slider__item slider__item--drill">
-            <span class="slider__title">Дрели</span>
-            <p class="slider__text">Соседям на радость!</p>
-            <!-- ссылки дублируются в каждом слайде, т.к. в будущем могут вести на разные страницы -->
-            <a class="button button--primary" href="catalog.html">Открыть каталог</a>
+        <div class="advantages__wrapper">
+          <div class="advantages__slider slider">
+            <div class="slider__item slider__item--drill slider__item--active">
+              <span class="slider__title">Дрели</span>
+              <p class="slider__text">Соседям на радость!</p>
+              <!-- ссылки дублируются в каждом слайде, т.к. в будущем могут вести на разные страницы -->
+              <a class="slider__button button button--primary" href="catalog.html">Открыть каталог</a>
+            </div>
+            <div class="slider__item slider__item--perforator">
+              <span class="slider__title">Перфораторы</span>
+              <p class="slider__text">Настоящие мужские игрушки</p>
+              <a class="slider__button button button--primary" href="catalog.html">Открыть каталог</a>
+            </div>
+            <button type="button" class="slider__arrow-nav slider__arrow-nav--left" aria-label="Назад"></button>
+            <button type="button" class="slider__arrow-nav slider__arrow-nav--right" aria-label="Вперёд"></button>
+            <div class="slider__dot-nav dot-nav">
+              <button type="button" class="dot-nav__item dot-nav__item--active" aria-label="Переход к слайду о дрелях"></button>
+              <button type="button" class="dot-nav__item" aria-label="Переход к слайду о перфораторах"></button>
+            </div>
           </div>
-          <div class="slider__item slider__item--perforator">
-            <span class="slider__title">Перфораторы</span>
-            <p class="slider__text">Настоящие мужские игрушки</p>
-            <a class="button button--primary" href="catalog.html">Открыть каталог</a>
-          </div>
-          <button type="button" class="slider__arrow-nav slider__arrow-nav--left" aria-label="Назад"></button>
-          <button type="button" class="slider__arrow-nav slider__arrow-nav--right" aria-label="Вперёд"></button>
-          <div class="slider__dot-nav dot-nav">
-            <button type="button" class="dot-nav__item dot-nav__item--active" aria-label="Переход к слайду о дрелях"></button>
-            <button type="button" class="dot-nav__item" aria-label="Переход к слайду о перфораторах"></button>
-          </div>
+          <ul class="advantages__categories-vertical categories">
+            <li class="categories__item categories__item--full-cart">
+              <span class="categories__title">Скидки 50%</span>
+              <a class="categories__link" href="catalog.html?filter=with_discount">на 350 товаров</a>
+            </li>
+            <li class="categories__item categories__item--delivery">
+              <span class="categories__title">Доставка</span>
+              <!-- Ссылка на страницу с подробным описанием условий доставки -->
+              <a class="categories__link" href="#">бесплатно</a>
+            </li>
+          </ul>
         </div>
-        <ul class="advantages__categories-vertical categories">
-          <li class="categories__item categories__item--full-cart">
-            <span class="categories__title">Скидки 50%</span>
-            <a class="categories__link" href="catalog.html?filter=with_discount">на 350 товаров</a>
-          </li>
-          <li class="categories__item categories__item--delivery">
-            <span class="categories__title">Доставка</span>
-            <!-- Ссылка на страницу с подробным описанием условий доставки -->
-            <a class="categories__link" href="#">бесплатно</a>
-          </li>
-        </ul>
       </section>
-      <section class="catalog">
-        <h2 class="title title--with-bg">Популярные товары:</h2>
-        <a class="button button--primary" href="catalog.html?filter=popular">все популярные товары</a>
+      <section class="catalog container">
+        <div class="catalog__title-with-button title-with-button">
+          <h2 class="title">Популярные товары:</h2>
+          <a class="button button--primary" href="catalog.html?filter=popular">все популярные товары</a>
+        </div>
         <ul class="catalog__goods goods">
           <li class="goods__item">
             <!-- ссылка на детальную страницу товара -->
@@ -144,8 +154,8 @@
             </p>
             <div class="goods__buttons">
               <!-- при открытии страницы в отдельной вкладке переход на страницу оформления заказа -->
-              <a class="button button--accent" href="#">Купить</a>
-              <button class="button button--secondary" type="button">В закладки</button>
+              <a class="goods__btn-buy button button--accent" href="#">Купить</a>
+              <button class="goods__btn-bookmark button button--secondary" type="button">В закладки</button>
             </div>
           </li>
           <li class="goods__item">
@@ -163,8 +173,8 @@
             </p>
             <div class="goods__buttons">
               <!-- при открытии страницы в отдельной вкладке переход на страницу оформления заказа -->
-              <a class="button button--accent" href="#">Купить</a>
-              <button class="button button--secondary" type="button">В закладки</button>
+              <a class="goods__btn-buy button button--accent" href="#">Купить</a>
+              <button class="goods__btn-bookmark button button--secondary" type="button">В закладки</button>
             </div>
           </li>
           <li class="goods__item">
@@ -182,8 +192,8 @@
             </p>
             <div class="goods__buttons">
               <!-- при открытии страницы в отдельной вкладке переход на страницу оформления заказа -->
-              <a class="button button--accent" href="#">Купить</a>
-              <button class="button button--secondary" type="button">В закладки</button>
+              <a class="goods__btn-buy button button--accent" href="#">Купить</a>
+              <button class="goods__btn-bookmark button button--secondary" type="button">В закладки</button>
             </div>
           </li>
           <li class="goods__item">
@@ -197,15 +207,17 @@
             </p>
             <div class="goods__buttons">
               <!-- при открытии страницы в отдельной вкладке переход на страницу оформления заказа -->
-              <a class="button button--accent" href="#">Купить</a>
-              <button class="button button--secondary" type="button">В закладки</button>
+              <a class="goods__btn-buy button button--accent" href="#">Купить</a>
+              <button class="goods__btn-bookmark button button--secondary" type="button">В закладки</button>
             </div>
           </li>
         </ul>
       </section>
-      <section class="brands">
-        <h2 class="title title--with-bg">Популярные производители:</h2>
-        <a class="button button--primary" href="#">Все производители</a>
+      <section class="brands container">
+        <div class="brands__title-with-button title-with-button">
+          <h2 class="title title--with-bg">Популярные производители:</h2>
+          <a class="button button--primary" href="#">Все производители</a>
+        </div>
         <ul class="brands__list">
           <li class="brands__item">
             <a class="brands__link" href="#">
@@ -249,84 +261,91 @@
           </li>
         </ul>
       </section>
-      <section class="services">
-        <h2 class="title title--main-color">Сервисы</h2>
-        <p>
-          Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
-        <ul class="services__list">
-          <li class="services__item">
-            <button class="services__button services__button--active" type="button">Доставка</button>
-          </li>
-          <li class="services__item">
-            <button class="services__button" type="button">Гарантия</button>
-          </li>
-          <li class="services__item">
-            <button class="services__button" type="button">Кредит</button>
-          </li>
-        </ul>
-        <ul class="services__info-list info-list">
-          <li class="info-list__item info-list__item--delivery">
-            <h3 class="sub-title">Доставка</h3>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо заработаем,<br>
-              поднимая его на ваш этаж!
-            </p>
-          </li>
-          <li class="info-list__item info-list__item--guarantee">
-            <h3 class="sub-title">Гарантия</h3>
-            <p>
-              Если купленный у нас товар поломается или заискрит,<br>
-              а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
-              Дом уж восстановите как-нибудь сами.
-            </p>
-          </li>
-          <li class="info-list__item info-list__item--credit">
-            <h3 class="sub-title">Кредит</h3>
-            <p>
-              Залезть в долговую яму стало проще!<br>
-              Кредитные консультанты придут вам на помощь.
-            </p>
-            <!-- Переход на страницу с формой оформления заявки -->
-            <a class="button button--primary" href="#">Отправить заявку</a>
-          </li>
-        </ul>
-      </section>
-      <section class="delivery">
-        <h2 class="title">Компания &laquo;Техномарт&raquo;</h2>
-        <p class="delivery__text">
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-        </p>
-        <p class="delivery__text">
-          Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-          Техномарт работает со многими транспортными компаниями:
-        </p>
-        <ul class="delivery__list">
-          <li class="delivery__item">
-            Деловые линии
-          </li>
-          <li class="delivery__item">
-            Автотрейдинг
-          </li>
-          <li class="delivery__item">
-            ЖелДорЭкспедиция
-          </li>
-        </ul>
-        <a class="button button--primary" href="#">Подробнее о компании</a>
-      </section>
-      <section class="contacts">
-        <h2 class="title">Контакты</h2>
-        <p class="contacts__text">
-          Вы можете забрать товар сами,<br>
-          заехав в наш офис:
-        </p>
-        <!-- по клику открывается попап с интерактивной картой -->
-        <a href="#">
-          <img src="img/map.jpg" width="300" height="158" alt="Адрес компании Техномарт - г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-        </a>
-        <button class="button button--primary" type="button">Заблудились? Hапишите нам!</button>
-      </section>
+      <div class="services-wrapper">
+        <section class="services container">
+          <h2 class="title title--main-color">Сервисы</h2>
+          <p>
+            Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+          <div class="services__slider">
+            <ul class="services__list">
+              <li class="services__item">
+                <button class="services__button services__button--active" type="button">Доставка</button>
+              </li>
+              <li class="services__item">
+                <button class="services__button" type="button">Гарантия</button>
+              </li>
+              <li class="services__item">
+                <button class="services__button" type="button">Кредит</button>
+              </li>
+            </ul>
+            <ul class="services__info-list info-list">
+              <li class="info-list__item info-list__item--delivery">
+                <h3 class="sub-title">Доставка</h3>
+                <p class="info-list__text">
+                  Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!
+                </p>
+              </li>
+              <li class="info-list__item info-list__item--guarantee">
+                <h3 class="sub-title">Гарантия</h3>
+                <p class="info-list__text">
+                  Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                  Дом уж восстановите как-нибудь сами.
+                </p>
+              </li>
+              <li class="info-list__item info-list__item--credit">
+                <h3 class="sub-title">Кредит</h3>
+                <p class="info-list__text">
+                  Залезть в долговую яму стало проще!<br>
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <!-- Переход на страницу с формой оформления заявки -->
+                <a class="button button--primary" href="#">Отправить заявку</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="index-info container">
+        <section class="index-info__delivery delivery">
+          <h2 class="title title--main-color">Компания &laquo;Техномарт&raquo;</h2>
+          <p class="delivery__text">
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          </p>
+          <p class="delivery__text">
+            Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+            Техномарт работает со многими транспортными компаниями:
+          </p>
+          <ul class="delivery__list">
+            <li class="delivery__item">
+              Деловые линии
+            </li>
+            <li class="delivery__item">
+              Автотрейдинг
+            </li>
+            <li class="delivery__item">
+              ЖелДорЭкспедиция
+            </li>
+          </ul>
+          <a class="button button--primary" href="#">Подробнее о компании</a>
+        </section>
+        <section class="index-info__contacts contacts">
+          <h2 class="title title--main-color">Контакты</h2>
+          <p class="contacts__text">
+            Вы можете забрать товар сами,<br>
+            заехав в наш офис:
+          </p>
+          <!-- по клику открывается попап с интерактивной картой -->
+          <a href="#">
+            <img src="img/map.jpg" width="300" height="158" alt="Адрес компании Техномарт - г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          </a>
+          <button class="button button--primary" type="button">Заблудились? Hапишите нам!</button>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="main-footer__sub-menu sub-menu">
@@ -334,69 +353,71 @@
           <img src="img/logo-technomart.svg" width="138" height="23" alt="Техномарт">
         </a>
         <ul class="sub-menu__list">
-          <li>
+          <li class="sub-menu__item">
             <a class="sub-menu__link">Компания</a>
           </li>
-          <li>
+          <li class="sub-menu__item">
             <a class="sub-menu__link" href="#">Новости</a>
           </li>
-          <li>
+          <li class="sub-menu__item">
             <a class="sub-menu__link" href="catalog.html">Каталог</a>
           </li>
-          <li>
+          <li class="sub-menu__item">
             <a class="sub-menu__link" href="#">Доставка</a>
           </li>
-          <li>
+          <li class="sub-menu__item">
             <a class="sub-menu__link" href="#">Контакты</a>
           </li>
         </ul>
       </div>
       <div class="main-footer__sub-nav sub-nav">
-        <p>
+        <p class="sub-nav__text">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           <a class="sub-nav__phone" href="tel:+78125550555">
             +7 (812) 555-05-55
           </a>
         </p>
         <ul class="sub-nav__list">
-          <li>
+          <li class="sub-nav__item">
             <a class="sub-nav__link" href="#">Материалы</a>
           </li>
-          <li>
+          <li class="sub-nav__item">
             <a class="sub-nav__link" href="#">Техника</a>
           </li>
-          <li>
+          <li class="sub-nav__item">
             <a class="sub-nav__link" href="#">Инструмент</a>
           </li>
-          <li>
+          <li class="sub-nav__item">
             <a class="sub-nav__link" href="#">Спецпредложения</a>
           </li>
         </ul>
       </div>
-      <div class="main-footer__panel panel">
-        <p class="panel__copyrights">
-          &copy; 2010-2019 Компания &laquo;Техномарт&raquo;
-          Все права защищены
-        </p>
-        <ul class="panel__networks networks">
-          <li class="networks__item">
-            <a class="networks__link networks__link--icon-vk" href="#" aria-label="Вконтакте"></a>
-          </li>
-          <li class="networks__item">
-            <a class="networks__link networks__link--icon-fb" href="#" aria-label="Фейсбук"></a>
-          </li>
-          <li class="networks__item">
-            <a class="networks__link networks__link--icon-insta" href="#" aria-label="Инстаграм"></a>
-          </li>
-        </ul>
-        <p class="panel__email">
-          Обратная связь:
-          <a class="panel__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="panel__developer">
-          Разработано &mdash;
-          <a class="panel__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
-        </p>
+      <div class="main-footer__panel-wrapper">
+        <div class="main-footer__panel panel">
+          <p class="panel__copyrights">
+            &copy; 2010-2019 Компания &laquo;Техномарт&raquo;
+            Все права защищены
+          </p>
+          <ul class="panel__networks networks">
+            <li class="networks__item">
+              <a class="networks__link networks__link--icon-vk" href="#" aria-label="Вконтакте"></a>
+            </li>
+            <li class="networks__item">
+              <a class="networks__link networks__link--icon-fb" href="#" aria-label="Фейсбук"></a>
+            </li>
+            <li class="networks__item">
+              <a class="networks__link networks__link--icon-insta" href="#" aria-label="Инстаграм"></a>
+            </li>
+          </ul>
+          <p class="panel__email">
+            Обратная связь:
+            <a class="panel__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="panel__developer">
+            Разработано &mdash;
+            <a class="panel__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
+          </p>
+        </div>
       </div>
     </footer>
 
@@ -422,7 +443,7 @@
 
     <section class="modal">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe class="iframe-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5df493e35e83f5fa35abd0f11aae3008a5200418afd3cd81cbd551089eba682b&amp;source=constructor" width="940" height="446"></iframe>
+      <!--iframe class="iframe-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5df493e35e83f5fa35abd0f11aae3008a5200418afd3cd81cbd551089eba682b&amp;source=constructor" width="940" height="446"></iframe-->
       <button type="button" class="icon-close" aria-label="Закрыть"></button>
     </section>
 
