@@ -709,6 +709,14 @@ a {
   margin-right: 0;
 }
 
+.catalog__goods .goods__item {
+  margin-right: 20px;
+}
+
+.catalog__goods .goods__item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .goods__item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
