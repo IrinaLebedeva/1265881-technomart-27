@@ -260,43 +260,42 @@ a {
   background-color: #ffffff;
 }
 
-.main-menu__bookmark,
-.main-menu__cart,
-.main-menu__order {
+.main-menu__btn,
+.main-menu__btn,
+.main-menu__btn {
   font-size: 17px;
   line-height: 1.06;
   color: #ffffff;
 
   width: 150px;
-}
-
-.main-menu__bookmark:hover,
-.main-menu__bookmark:focus,
-.main-menu__cart:hover,
-.main-menu__cart:focus {
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #161d29;
-}
-
-.main-menu__cart--not-empty {
-  background-color: #ee3643;
-}
-
-.main-menu__order {
-  background-color: #63a63e;
-
   padding-top: 12px;
   padding-bottom: 12px;
 
   text-align: center;
 }
 
-.main-menu__order:hover,
-.main-menu__order:focus {
+.main-menu__btn:hover,
+.main-menu__btn:focus,
+.main-menu__btn:hover,
+.main-menu__btn:focus {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.main-menu__btn--not-empty {
+  background-color: #ee3643;
+}
+
+.main-menu__btn--order {
+  background-color: #63a63e;
+}
+
+.main-menu__btn--order:hover,
+.main-menu__btn--order:focus {
   background-color: #5fbb2d;
 }
 
-.main-menu__order:active {
+.main-menu__btn--order:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #518534;
 }
