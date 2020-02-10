@@ -603,15 +603,25 @@ a {
 /* slider */
 .slider__arrow-nav {
   position: absolute;
-  top: 50%;
+  top: 44%;
+
+  width: 22px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+
+  border: none;
 }
 
 .slider__arrow-nav--left {
   left: 25px;
+  background-image: url("../img/icons/icon-left.svg");
 }
 
 .slider__arrow-nav--right {
-  right: 25px;
+  right: 20px;
+  background-image: url("../img/icons/icon-right.svg");
 }
 
 .slider__dot-nav {
@@ -754,10 +764,8 @@ a {
 
 .goods__title {
   font-size: inherit;
-  margin-top: 12px;
-  margin-right: 31px;
-  margin-bottom: 18px;
-  margin-left: 30px;
+  margin: 12px auto 18px;
+  width: 80%;
 }
 
 .goods__old-price {
