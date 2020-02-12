@@ -206,19 +206,23 @@ a {
 /* icon */
 .icon::before {
   opacity: 0.5;
-  width: 14px;
-  height: 16px;
   position: absolute;
-  top: 14px;
 }
+
 .icon--search::before {
   content: url("../img/icons/icon-search.svg");
+  top: 12px;
+  left: 17px;
 }
+
 .icon--bookmark::before {
   content: url("../img/icons/icon-bookmark.svg");
+  left: 17px;
 }
+
 .icon--cart::before {
   content: url("../img/icons/icon-cart.svg");
+  left: 18px;
 }
 
 /* main-header */
@@ -259,17 +263,57 @@ a {
 }
 
 .main-menu__search {
+  position: relative;
   flex-grow: 1;
 }
 
 .main-menu__search-field {
   background-color: #293449;
+  margin-left: 44px;
+  padding: 0 4px;
   border: none;
+  height: 42px;
+  width: 226px;
+}
+
+/* Firefox 19-50 */
+.main-menu__search-field::-moz-placeholder{
+  font-size: 17px;
+  line-height: 42px;
+  height: 42px;
+  color: #ffffff;
+  vertical-align: middle;
+}
+
+/* - Internet Explorer 10–11
+ - Internet Explorer Mobile 10-11 */
+.main-menu__search-field:-ms-input-placeholder{
+  font-size: 17px;
+  line-height: 42px;
+  height: 42px;
+  color: #ffffff !important; /* IE11 needs the !important flag */
+}
+
+/* Edge - only work on some properties */
+.main-menu__search-field::-ms-input-placeholder{
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 17px !important;
+  line-height: 42px;
+  height: 42px;
+  color: #ffffff;
+}
+
+.main-menu__search-field::-webkit-input-placeholder {
+  font-size: 17px;
+  line-height: 42px;
+  height: 42px;
+  color: #ffffff !important;
 }
 
 .main-menu__search-field::placeholder {
   font-size: 17px;
-  line-height: 1.06;
+  line-height: 42px;
+  height: 42px;
   color: #ffffff;
 }
 
@@ -287,7 +331,9 @@ a {
   color: #ffffff;
 
   width: 150px;
-  padding: 12px 17px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 44px;
 
   position: relative;
 }
@@ -308,6 +354,10 @@ a {
 .main-menu__btn:active {
   color: rgba(255, 255, 255, 0.6);
   background-color: #161d29;
+}
+
+.main-menu__btn.icon--cart {
+  padding-left: 50px;
 }
 
 .main-menu__btn--not-empty {
@@ -428,6 +478,8 @@ a {
 
 /* site navigation */
 .navigation__site-nav {
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 59px;
 }
 
@@ -442,19 +494,24 @@ a {
 .site-nav__list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0px;
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   min-height: 60px;
 }
 
+.sub-nav__item {
+  display: flex;
+}
+
 .site-nav__link {
   color: #ffffff;
 
+  display: block;
   min-height: 60px;
   padding: 20px 30px;
 }
