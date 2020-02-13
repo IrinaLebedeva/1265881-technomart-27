@@ -134,6 +134,12 @@ a {
   color: #ffffff;
 
   background-color: #ee3643;
+  border-radius: 3px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 
 .button--primary:hover,
@@ -832,6 +838,7 @@ a {
   background-color: transparent;
 
   border: none;
+  cursor: pointer;
 }
 
 .slider__arrow-nav--left {
@@ -845,9 +852,34 @@ a {
 }
 
 .slider__dot-nav {
+  font-size: 0;
+
   position: absolute;
-  left: 50%;
+  left: 295px;
   bottom: 36px;
+}
+
+.dot-nav__item {
+  width: 10px;
+  height: 10px;
+
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+
+  display: inline-block;
+  vertical-align: top;
+
+  margin-right: 10px;
+  padding: 0;
+
+  cursor: pointer;
+}
+
+.dot-nav__item--active {
+  background-color: #ee3643;
 }
 
 .slider {
@@ -888,6 +920,10 @@ a {
   position: absolute;
   left: 25px;
   bottom: 22px;
+
+  padding-left: 50px;
+  padding-right: 46px;
+  padding-right: 46px;
 }
 
 .slider__item--active {
@@ -1007,6 +1043,8 @@ a {
   color: #ffffff;
 
   background-color: #ee3643;
+  width: 141px;
+  height: 38px;
 
   margin-top: auto;
   margin-bottom: 0;
