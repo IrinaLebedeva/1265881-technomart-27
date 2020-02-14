@@ -107,6 +107,7 @@ a {
   text-transform: uppercase;
 
   margin: 0;
+  margin-bottom: 25px;
 }
 
 .inner-title {
@@ -239,6 +240,31 @@ a {
   content: url("../img/icons/icon-phone.svg");
   top: 9px;
   left: 14px;
+}
+
+/* mark */
+.mark {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1;
+  font-size: 16px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+
+  transform: rotate(45deg);
+  position: absolute;
+  top: 5px;
+  right: -24px;
+
+  width: 90px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  display: flex;
+  justify-content: center;
 }
 
 /* main-header */
@@ -767,6 +793,7 @@ a {
   padding: 22px;
 
   position: relative;
+  overflow: hidden;
 }
 
 .categories__item::after {
@@ -997,6 +1024,7 @@ a {
   align-items: center;
 
   position: relative;
+  overflow: hidden;
 }
 
 .goods__item:nth-child(3n) {
