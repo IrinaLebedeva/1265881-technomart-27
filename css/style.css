@@ -1260,6 +1260,18 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+.services__list:after {
+  content: '';
+  background-image: url("../img/services-shadow.png");
+  width: 10px;
+  height: 279px;
+
+  position: absolute;
+  top: -45px;
+  right: 0;
 }
 
 .services__button {
