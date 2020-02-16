@@ -56,7 +56,9 @@
                 <!-- ссылка на профайл пользователя -->
                 <a class="user-profile__link" href="#">
                   <svg class="user-profile__icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
-                  Равшан Джамшутович
+                  <span class="user-profile__username">
+                    Равшан Джамшутович
+                  </span>
                 </a>
                 <!-- ссылка на страницу выхода -->
                 <a class="user-profile__link-logout" href="#" aria-label="Выход">
@@ -194,10 +196,14 @@
             </ul>
             <ul class="sort__list-order list-order">
               <li>
-                <a class="list-order__link list-order__link--up" aria-label="По возрастанию"></a>
+                <a class="list-order__link list-order__link--up list-order__link--active" aria-label="По возрастанию">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                </a>
               </li>
               <li>
-                <a class="list-order__link list-order__link--down" href="catalog.html?sort_order=desc" aria-label="По убыванию"></a>
+                <a class="list-order__link list-order__link--down" href="catalog.html?sort_order=desc" aria-label="По убыванию">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                </a>
               </li>
             </ul>
           </section>
@@ -257,6 +263,7 @@
                   <a class="goods__btn-buy button button--accent" href="#">Купить</a>
                   <button class="goods__btn-bookmark button button--secondary" type="button">В закладки</button>
                 </div>
+                <div class="mark">new</div>
               </li>
               <li class="goods__item">
                 <a class="goods__link" href="#">
@@ -295,6 +302,7 @@
                   <a class="goods__btn-buy button button--accent" href="#">Купить</a>
                   <button class="goods__btn-bookmark button button--secondary" type="button">В закладки</button>
                 </div>
+                <div class="mark">new</div>
               </li>
               <li class="goods__item">
                 <a class="goods__link" href="#">
@@ -329,6 +337,7 @@
                   <a class="goods__btn-buy button button--accent" href="#">Купить</a>
                   <button class="goods__btn-bookmark button button--secondary" type="button">В закладки</button>
                 </div>
+                <div class="mark">new</div>
               </li>
               <li class="goods__item">
                 <a class="goods__link" href="#">
@@ -365,7 +374,7 @@
                 </div>
               </li>
             </ul>
-            <ol class="pagination">
+            <ol class="content__pagination pagination">
               <li class="pagination__item">
                 <a class="pagination__link pagination__link--current">1</a>
               </li>
@@ -376,7 +385,7 @@
                 <a class="pagination__link" href="#">3</a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link" href="#">Следующая</a>
+                <a class="pagination__link pagination__link--next" href="#">Следующая</a>
               </li>
             </ol>
           </section>
