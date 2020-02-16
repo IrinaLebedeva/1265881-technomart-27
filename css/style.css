@@ -652,7 +652,7 @@ input[type="radio"].visually-hidden {
 .user-profile {
   background-color: #ffffff;
 
-  padding-top: 14px;
+  padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 14px;
   padding-left: 14px;
@@ -665,35 +665,36 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.user-profile__icon {
-  position: absolute;
-  top: 14px;
-  left: 13px;
-}
-
 .user-profile__link {
   font-size: 21px;
   color: #000000;
-
-  margin-left: 32px;
 }
 
 .user-profile__link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-profile__link:hover + .user-profile__icon path,
-.user-profile__link:focus + .user-profile__icon path,
-.user-profile__link-logout:hover path,
-.user-profile__link-logout:focus path {
+.user-profile__link:hover .user-profile__icon-user path,
+.user-profile__link:focus .user-profile__icon-user path,
+.user-profile__link-logout:hover .user-profile__icon-logout path,
+.user-profile__link-logout:focus .user-profile__icon-logout path {
   fill: #32425C;
 }
 
-.user-profile__link:active + .user-profile__icon path,
-.user-profile__link:visited + .user-profile__icon path,
-.user-profile__link-logout:hover path,
-.user-profile__link-logout:focus path {
+.user-profile__link:active .user-profile__icon-user path,
+.user-profile__link:visited .user-profile__icon-user path,
+.user-profile__link-logout:hover .user-profile__icon-logout path,
+.user-profile__link-logout:focus .user-profile__icon-logout path {
   fill: #c5c5c5;
+}
+
+.user-profile__icon-user {
+  margin-top: 3px;
+  margin-right: 8px;
+}
+
+.user-profile__link-logout {
+  margin-top: 3px;
 }
 
 /*user-account */
