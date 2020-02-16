@@ -1606,11 +1606,82 @@ input[type="radio"].visually-hidden {
 
 .filter__track {
   background-color: #f7f3ec;
+
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-bottom: 39px;
+  padding-left: 20px;
+  margin-top: 13px;
+
+  border-radius: 4px;
+}
+
+.filter__line {
+  width: 180px;
+  border-bottom: 2px solid #d7dcde;
+  position: relative;
+}
+
+.filter__line-active {
+  width: 152px;
+  height: 2px;
+  background-color: #00ca74;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.filter__pin {
+  background-image: url("../img/form-filter/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  width: 20px;
+  height: 22px;
+
+  position: absolute;
+  top: -9px;
+  left: 0;
+}
+
+.filter__pin--max {
+  left: 140px;
 }
 
 .filter__track_values {
-  background-color: #f7f3ec;
+  margin-top: 8px;
+  margin-bottom: 25px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.filter__number {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.06;
+  color: #000000;
+  text-align: center;
+
+  background-color: #f7f3ec;
+
+  border-radius: 4px;
+  border: none;
+
+  width: 95px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+.filter__number-range-sign {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.13;
+  color: #444444;
+}
+
 
 .filter__list {
   list-style: none;

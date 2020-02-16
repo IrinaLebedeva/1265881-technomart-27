@@ -128,14 +128,18 @@
             <fieldset class="filter__fieldset">
               <legend class="filter__title">Цена:</legend>
               <div class="filter__track">
-                <div class="filter__pin filter__pin--min"></div>
-                <div class="filter__pin filter__pin--max"></div>
-               </div>
-              <!-- явно надо будет доделывать -->
+                <div class="filter__line">
+                  <div class="filter__line-active"></div>
+                  <div class="filter__pin filter__pin--min"></div>
+                  <div class="filter__pin filter__pin--max"></div>
+                </div>
+              </div>
               <p class="filter__track_values">
-                <input type="number" name="price-min" id="price-min" value="0" min="0" max="30000">
+                <!-- у input type="number" справа появляется контрол, которого нет в макете, поэтому использую type="text" -->
+                <input class="filter__number" type="text" name="price-min" id="price-min" value="0" pattern="^[0-9]+$">
                 <label for="price-min" class="visually-hidden">Минимальная цена</label>
-                <input type="number" name="price-max" id="price-max" value="30000" min="0" max="30000">
+                <span class="filter__number-range-sign">&mdash;</span>
+                <input class="filter__number" type="text" name="price-max" id="price-max" value="30000" pattern="^[0-9]+$">
                 <label for="price-max" class="visually-hidden">Максимальная цена</label>
               </p>
             </fieldset>
