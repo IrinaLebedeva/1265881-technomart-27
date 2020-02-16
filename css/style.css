@@ -38,6 +38,7 @@ a {
 }
 
 .visually-hidden:not(:focus):not(:active),
+button[type="submit"].visually-hidden,
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
@@ -1025,7 +1026,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   left: 295px;
-  top: 220px;
+  bottom: 36px;
 }
 
 .dot-nav__item {
