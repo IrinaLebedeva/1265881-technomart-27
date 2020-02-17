@@ -675,26 +675,17 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.user-profile__link:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.user-profile__link:hover .user-profile__icon-user path,
-.user-profile__link:focus .user-profile__icon-user path,
-.user-profile__link-logout:hover .user-profile__icon-logout g,
-.user-profile__link-logout:focus .user-profile__icon-logout g,
-.user-profile__link-logout:hover .user-profile__icon-logout path,
-.user-profile__link-logout:focus .user-profile__icon-logout path {
+.user-profile__link:hover path,
+.user-profile__link:focus path {
   fill: #32425C;
 }
 
-.user-profile__link:active .user-profile__icon-user path,
-.user-profile__link:visited .user-profile__icon-user path,
-.user-profile__link-logout:hover .user-profile__icon-logout g,
-.user-profile__link-logout:focus .user-profile__icon-logout g,
-.user-profile__link-logout:hover .user-profile__icon-logout path,
-.user-profile__link-logout:focus .user-profile__icon-logout path {
+.user-profile__link:active path {
   fill: #c5c5c5;
+}
+
+.user-profile__link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .user-profile__username {
