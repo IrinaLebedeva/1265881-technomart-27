@@ -1203,6 +1203,7 @@ input[type="radio"].visually-hidden {
   text-decoration: line-through;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 9px;
 }
 
 .goods__price {
@@ -1251,6 +1252,13 @@ input[type="radio"].visually-hidden {
 }
 
 .goods__buttons--active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.goods__link:focus ~ .goods__buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1791,14 +1799,14 @@ input[type="radio"].visually-hidden {
 .sort__list {
   list-style: none;
   margin: 0;
+  margin-left: auto;
   margin-right: 25px;
   padding: 0;
 
-  flex-grow: 1;
-
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
+  width: 355px;
 }
 
 .sort__list--with-bg {
@@ -1809,7 +1817,13 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
-  margin-left: 68px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.sort__item:first-of-type {
+  margin-left: 0;
 }
 
 .sort__link {
