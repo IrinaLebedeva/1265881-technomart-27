@@ -253,8 +253,8 @@ input[type="radio"].visually-hidden {
 
 .icon--phone::before {
   content: url("../img/icons/icon-phone.svg");
-  top: 9px;
-  left: 14px;
+  top: 5px;
+  left: 12px;
 }
 
 /* mark */
@@ -525,11 +525,12 @@ input[type="radio"].visually-hidden {
   border: solid 3px #ffffff;
 
   display: block;
-  height: 45px;
+  min-height: 45px;
   width: 270px;
   padding-left: 70px;
   padding-top: 4px;
   margin-bottom: 5px;
+  position: relative;
 }
 
 .site-contacts__phone:hover,
@@ -1212,17 +1213,16 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   background-color: #ee3643;
-  width: 122px;
+  min-width: 122px;
   height: 38px;
 
   margin-top: auto;
   margin-bottom: 0;
-  margin-left: 42px;
-  padding-left: 35px;
+  margin-right: 11px;
+  padding-left: 15px;
+  text-align: center;
 
   position: relative;
-
-  align-self: flex-start;
 }
 
 .goods__price::after {
@@ -1489,6 +1489,7 @@ input[type="radio"].visually-hidden {
 .info-list__item--active {
   min-height: 300px;
   visibility: visible;
+  height: auto;
 }
 
 .info-list__item--delivery {
