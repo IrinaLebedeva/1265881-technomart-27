@@ -1057,9 +1057,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   display: block;
-  padding-top: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 .slider__text {
@@ -1067,37 +1064,26 @@ input[type="radio"].visually-hidden {
   line-height: 1.33;
 
   margin: 0;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 .slider__item {
-  width: 620px;
-  height: 0;
   background-repeat: no-repeat;
-
   position: relative;
-  visibility: hidden;
-}
 
-.slider__button {
-  position: absolute;
-  left: 25px;
-  bottom: 22px;
+  width: 620px;
+  min-height: 266px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 22px;
+  padding-right: 25px;
 
-  max-width: 250px;
-  padding-left: 50px;
-  padding-right: 46px;
-  margin: 0;
-  margin-right: 20px;
-
-  display: inline-block;
-  vertical-align: top;
+  display: none;
 }
 
 .slider__item--active {
-  height: 266px;
-  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .slider__item--drill {
@@ -1108,6 +1094,16 @@ input[type="radio"].visually-hidden {
 .slider__item--perforator {
   background-color: #ccbdaf;
   background-image: url("../img/slider-advantages-2.jpg");
+}
+
+.slider__button {
+  max-width: 250px;
+  padding-left: 50px;
+  padding-right: 46px;
+
+  margin-top: auto;
+
+  display: block;
 }
 
 /* advantages */
@@ -1634,6 +1630,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: -9px;
   left: 0;
+
+  cursor: pointer;
 }
 
 .filter__pin--max {
