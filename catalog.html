@@ -487,14 +487,18 @@
       </div>
     </footer>
 
-    <section class="modal modal__notice-cart notice-cart">
-      <h2>Товар добавлен в корзину</h2>
-      <p class="modal__buttons-wrapper">
-        <a href="#">Оформить заказ</a>
-        <button type="button">Продолжить покупки</button>
-      </p>
-      <button type="button" class="modal__close" aria-label="Закрыть"></button>
-    </section>
+    <div class="modal">
+      <section class="modal__notice-cart notice-cart">
+        <div class="modal__content">
+          <h2 class="modal__title modal__title--notice">Товар добавлен в корзину!</h2>
+        </div>
+        <p class="modal__bottom">
+          <a class="button button--primary" href="#">Оформить заказ</a>
+          <button class="button button--modal-secondary" type="button">Продолжить покупки</button>
+        </p>
+        <button type="button" class="modal__close" aria-label="Закрыть"></button>
+      </section>
+    </div>
 
     <script src="js/script.js"></script>
   </body>

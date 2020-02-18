@@ -439,33 +439,40 @@
       </div>
     </footer>
 
-    <section class="modal modal__feedback feedback">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form action="https://echo.htmlacademy.ru" method="post" name="feedback">
-        <p>
-          <label for="feedback-name">Ваше имя:</label>
-          <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" minlength="3" required>
-        </p>
-        <p>
-          <label for="feedback-email">Ваш e-mail:</label>
-          <input type="email" name="email" id="feedback-email" placeholder="email@example.com" required>
-        </p>
-        <p>
-          <label for="feedback-body">Текст письма:</label>
-          <textarea name="body" id="feedback-body" placeholder="В свободной форме" required></textarea>
-        </p>
-        <p class="modal__buttons-wrapper">
-          <button type="submit">Отправить</button>
-        </p>
-      </form>
-      <button type="button" class="modal__close" aria-label="Закрыть"></button>
-    </section>
+    <div class="modal">
+      <section class="modal__feedback feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post" name="feedback">
+          <div class="modal__content feedback__content">
+            <p class="modal__field">
+              <label class="modal__label" for="feedback-name">Ваше имя:</label>
+              <input class="modal__input modal__input--text" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" minlength="3" required>
+            </p>
+            <p class="modal__field">
+              <label class="modal__label" for="feedback-email">Ваш e-mail:</label>
+              <input class="modal__input modal__input--text" type="email" name="email" id="feedback-email" placeholder="email@example.com" required>
+            </p>
+            <p class="modal__field feedback__textarea-wrapper">
+              <label class="modal__label" for="feedback-body">Текст письма:</label>
+              <textarea class="modal__input modal__input--textarea" name="body" id="feedback-body" placeholder="В свободной форме" required></textarea>
+            </p>
+          </div>
+          <p class="modal__bottom">
+            <button class="button button--primary button--full-width" type="submit">Отправить</button>
+          </p>
+        </form>
+        <button type="button" class="modal__close" aria-label="Закрыть"></button>
+      </section>
+    </div>
 
-    <section class="modal modal__map map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <!--iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5df493e35e83f5fa35abd0f11aae3008a5200418afd3cd81cbd551089eba682b&amp;source=constructor" width="940" height="446"></iframe-->
-      <button type="button" class="modal__close" aria-label="Закрыть"></button>
-    </section>
+    <div class="modal modal--active">
+      <section class="modal__map map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5df493e35e83f5fa35abd0f11aae3008a5200418afd3cd81cbd551089eba682b&amp;source=constructor" width="940" height="446"></iframe>
+        <!-- смещаю кнопку закрытия вправо, т.к. загораживаются контроля карты; -->
+        <button type="button" class="modal__close modal__close--right" aria-label="Закрыть"></button>
+      </section>
+    </div>
 
     <script src="js/script.js"></script>
   </body>
