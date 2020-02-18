@@ -439,7 +439,7 @@
       </div>
     </footer>
 
-    <section class="modal">
+    <section class="modal modal__feedback feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="https://echo.htmlacademy.ru" method="post" name="feedback">
         <p>
@@ -454,15 +454,17 @@
           <label for="feedback-body">Текст письма:</label>
           <textarea name="body" id="feedback-body" placeholder="В свободной форме" required></textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <p class="modal__buttons-wrapper">
+          <button type="submit">Отправить</button>
+        </p>
       </form>
-      <button type="button" class="icon-close" aria-label="Закрыть"></button>
+      <button type="button" class="modal__close" aria-label="Закрыть"></button>
     </section>
 
-    <section class="modal">
+    <section class="modal modal__map map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <!--iframe class="iframe-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5df493e35e83f5fa35abd0f11aae3008a5200418afd3cd81cbd551089eba682b&amp;source=constructor" width="940" height="446"></iframe-->
-      <button type="button" class="icon-close" aria-label="Закрыть"></button>
+      <!--iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5df493e35e83f5fa35abd0f11aae3008a5200418afd3cd81cbd551089eba682b&amp;source=constructor" width="940" height="446"></iframe-->
+      <button type="button" class="modal__close" aria-label="Закрыть"></button>
     </section>
 
     <script src="js/script.js"></script>

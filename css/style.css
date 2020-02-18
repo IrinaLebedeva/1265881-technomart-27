@@ -2093,9 +2093,76 @@ input[type="radio"].visually-hidden {
 /* modal */
 .modal {
   display: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #ffffff;
+
+  padding-top: 50px;
+  padding-right: 80px;
+  padding-bottom: 37px;
+  padding-left: 80px;
 }
 
-/* popup: map */
-.iframe-map {
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 19px;
+
+  width: 22px;
+  height: 22px;
+
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.modal__close::before,
+.modal__close::after {
+  content: '';
+  width: 3px;
+  height: 26px;
+  background-color: #ee3643;
+
+  position: absolute;
+  top: -2px;
+  left: 8px;
+}
+
+.modal__close::before {
+  transform: rotate(45deg);
+}
+
+.modal__close::after {
+  transform: rotate(-45deg);
+}
+
+.modal__buttons-wrapper {
+  background-color: #f4f4f4;
+}
+
+.modal__feedback {
+  display: inline;
+
+  min-width: 620px;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  border-top: 7px solid #ee3643;
+}
+
+.modal__map {
+  box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+}
+
+.modal__notice-cart {
+  min-width: 620px;
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+  border-top: 7px solid #ee3643;
+}
+
+/* modal: map */
+.map__iframe {
   border: none;
 }
