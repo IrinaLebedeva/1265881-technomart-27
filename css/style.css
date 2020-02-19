@@ -2198,8 +2198,8 @@ input[type="radio"].visually-hidden {
 
 .modal__close {
   position: absolute;
-  top: 16px;
-  right: 19px;
+  top: 10px;
+  right: 7px;
 
   width: 22px;
   height: 22px;
@@ -2329,8 +2329,8 @@ input[type="radio"].visually-hidden {
 }
 
 .modal__title--notice {
-  margin-top: 20px;
-  margin-bottom: 35px;
+  margin-top: 17px;
+  margin-bottom: 42px;
   padding-left: 98px;
   position: relative;
 }
