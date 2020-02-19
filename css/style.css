@@ -1273,16 +1273,21 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 0;
-}
 
-.goods__item:hover .goods__buttons,
-.goods__item:focus .goods__buttons,
-.goods__link:active ~ .goods__buttons,
-.goods__buttons--active {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  opacity: 0;
+}
+
+.goods__item:hover .goods__buttons,
+.goods__item:focus .goods__buttons,
+.goods__link:focus ~ .goods__buttons,
+.goods__buttons:focus-within,
+.goods__buttons--active {
+  opacity: 1;
 }
 
 .goods__buttons .button {
