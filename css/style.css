@@ -38,7 +38,6 @@ a {
 }
 
 .visually-hidden:not(:focus):not(:active),
-button[type="submit"].visually-hidden,
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
@@ -97,8 +96,9 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   margin-top: 5px;
-  margin-left: -2px;
+  margin-right: 10px;
   margin-bottom: 5px;
+  margin-left: -2px;
 }
 
 .title--info {
@@ -117,7 +117,9 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   margin: 0;
-  margin-bottom: 25px;
+  margin-top: 2px;
+  margin-bottom: 26px;
+  max-width: 380px;
 }
 
 .inner-title {
@@ -215,8 +217,6 @@ input[type="radio"].visually-hidden {
 
   padding-top: 8px;
   padding-bottom: 6px;
-
-  outline: none;
 }
 
 .button--secondary:hover,
@@ -409,7 +409,8 @@ input[type="radio"].visually-hidden {
 }
 
 
-.main-menu__search-label {
+.main-menu__search-label,
+.main-menu__search-button {
   opacity: 0.5;
 
   position: absolute;
@@ -421,17 +422,29 @@ input[type="radio"].visually-hidden {
   padding-left: 17px;
 }
 
-.main-menu__search-field:hover + label {
+.main-menu__search-button {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.main-menu__search-button:focus ~ label {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.main-menu__search-button:focus ~ label,
+.main-menu__search-field:hover ~ label {
   opacity: 1;
   background-color: #293449;
 }
 
-.main-menu__search-field:focus + label {
+.main-menu__search-field:focus ~ label {
   opacity: 1;
   background-color: #ffffff;
 }
 
-.main-menu__search-field:focus + label path {
+.main-menu__search-field:focus ~ label path {
   fill: #ee3643;
 }
 
@@ -551,8 +564,9 @@ input[type="radio"].visually-hidden {
   display: block;
   min-height: 45px;
   width: 270px;
-  padding-left: 70px;
   padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 70px;
   margin-bottom: 5px;
   position: relative;
 }
@@ -581,10 +595,7 @@ input[type="radio"].visually-hidden {
 
 .user-nav__item {
   letter-spacing: 0.1px;
-
   background-color: #ffffff;
-  padding: 13px 24px;
-
   position: relative;
 }
 
@@ -596,19 +607,17 @@ input[type="radio"].visually-hidden {
   width: 121px;
 }
 
-.user-nav__link--login {
-  padding-left: 24px;
-}
-
-.user-nav__icon-login {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-}
-
 .user-nav__link {
   font-size: 21px;
   color: #000000;
+
+  padding-top: 13px;
+  padding-right: 24px;
+  padding-bottom: 13px;
+  padding-left: 23px;
+
+  display: block;
+  max-width: 150px;
 }
 
 .user-nav__link:hover,
@@ -618,6 +627,16 @@ input[type="radio"].visually-hidden {
 
 .user-nav__link:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.user-nav__link--login {
+  padding-left: 47px;
+}
+
+.user-nav__icon-login {
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 .user-nav__link--login:hover .user-nav__icon-login path,
@@ -716,6 +735,7 @@ input[type="radio"].visually-hidden {
 .user-profile__username {
   display: inline-block;
   vertical-align: top;
+
   max-width: 215px;
   margin-left: 7px;
 }
@@ -867,6 +887,12 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 1px;
   left: -2px;
+}
+
+.breadcrumbs__link--icon-home:focus::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 
 /* categories */
@@ -1361,6 +1387,10 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.brands__link {
+  font-size: 0;
+}
+
 /* pagination */
 .pagination {
   list-style: none;
@@ -1469,6 +1499,7 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
   margin: 0;
+  margin-top: 2px;
   padding: 0;
   position: relative;
 }
@@ -1496,8 +1527,9 @@ input[type="radio"].visually-hidden {
   background-color: #32425c;
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
 
-  min-width: 240px;
-  padding-top: 18px;
+  width: 240px;
+  padding-top: 17px;
+  padding-right: 22px;
   padding-bottom: 15px;
   padding-left: 22px;
 }
@@ -1548,7 +1580,7 @@ input[type="radio"].visually-hidden {
 }
 
 .info-list__item--active {
-  min-height: 300px;
+  min-height: 294px;
   visibility: visible;
   height: auto;
 }
@@ -1627,6 +1659,10 @@ input[type="radio"].visually-hidden {
 .contacts__text {
   margin-top: 0;
   margin-bottom: 31px;
+}
+
+.contacts__link-map {
+  font-size: 0;
 }
 
 .contacts__button {
@@ -1828,6 +1864,13 @@ input[type="radio"].visually-hidden {
 .filter__input--radio:hover:not(:disabled) + label::before,
 .filter__input--radio:focus:not(:disabled) + label::before {
   opacity: 1;
+}
+
+.filter__input--checkbox:focus + label::before,
+.filter__input--radio:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 
 .filter__button {
@@ -2048,8 +2091,9 @@ input[type="radio"].visually-hidden {
 .sub-nav__text {
   margin: 0;
   margin-right: 15px;
+  margin-left: 3px;
 
-  width: 325px;
+  max-width: 325px;
 
   flex-shrink: 0;
 }
@@ -2095,21 +2139,21 @@ input[type="radio"].visually-hidden {
 }
 
 .panel__copyrights {
-  width: 228px;
+  max-width: 228px;
 }
 
 .panel__email {
-  width: 135px;
-  margin-right: 53px  ;
+  max-width: 137px;
+  margin-right: 52px  ;
 }
 
 .panel__developer {
-  width: 96px;
-  margin-right: 15px;
+  max-width: 98px;
+  margin-right: 13px;
 }
 
 .panel__networks {
-  margin-right: 119px;
+  margin-left: 39px;
   flex-grow: 1;
 }
 
@@ -2136,7 +2180,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
   width: 132px;
 }
@@ -2324,6 +2368,23 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
 }
 
+.map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin: 0;
+
+  z-index: 1;
+}
+
+.map__iframe {
+  position: relative;
+  border: none;
+
+  z-index: 2;
+}
+
 /* modal: notice cart */
 .modal__notice-cart {
   position: relative;
@@ -2360,9 +2421,4 @@ input[type="radio"].visually-hidden {
 .notice-cart .button--primary,
 .notice-cart .button--modal-secondary {
   min-width: 220px;
-}
-
-/* modal: map */
-.map__iframe {
-  border: none;
 }
