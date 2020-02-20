@@ -5,6 +5,7 @@
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   min-width: 980px;
 }
@@ -420,11 +421,12 @@ input[type="radio"].visually-hidden {
   width: 44px;
   padding-top: 12px;
   padding-left: 17px;
+
+  cursor: pointer;
 }
 
 .main-menu__search-button {
   opacity: 0;
-  cursor: pointer;
 }
 
 .main-menu__search-button:focus ~ label {
@@ -1111,14 +1113,18 @@ input[type="radio"].visually-hidden {
 }
 
 .slider__text {
+  word-break: break-word;
   font-size: 18px;
   line-height: 1.33;
 
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .slider__item {
   background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
   position: relative;
 
   width: 620px;
@@ -1232,6 +1238,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   text-align: center;
+  cursor: pointer;
 }
 
 .goods__img {
@@ -1252,8 +1259,13 @@ input[type="radio"].visually-hidden {
   color: #a9a9a9;
   text-decoration: line-through;
   text-transform: uppercase;
-  margin: 0;
+
+  margin-top: 0;
+  margin-right: 10px;
   margin-bottom: 9px;
+  margin-left: 13px;
+
+  text-align: center;
 }
 
 .goods__price {
@@ -1262,16 +1274,18 @@ input[type="radio"].visually-hidden {
   line-height: 38px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: #ee3643;
+
   min-width: 122px;
+  max-width: 185px;
   height: 38px;
 
   margin-top: auto;
   margin-bottom: 0;
-  margin-right: 11px;
+  margin-right: 12px;
   padding-left: 15px;
-  text-align: center;
 
   position: relative;
 }
@@ -1311,17 +1325,32 @@ input[type="radio"].visually-hidden {
 .goods__item:hover .goods__buttons,
 .goods__item:focus .goods__buttons,
 .goods__link:focus ~ .goods__buttons,
-.goods__buttons:focus-within,
 .goods__buttons--active {
+  opacity: 1;
+}
+
+.goods__buttons:focus-within {
   opacity: 1;
 }
 
 .goods__buttons .button {
   min-width: 135px;
+  max-width: 170px;
+  max-height: 53px;
+  padding-right: 9px;
+  padding-left: 12px;
+
+  overflow: hidden;
 }
 
-.goods__btn-buy {
+.goods__buttons .goods__btn-buy {
+  text-align: center;
+
+  max-height: 48px;
+  padding-left: 36px;
+  padding-right: 31px;
   margin-bottom: 9px;
+
   position: relative;
 }
 
@@ -1532,6 +1561,8 @@ input[type="radio"].visually-hidden {
   padding-right: 22px;
   padding-bottom: 15px;
   padding-left: 22px;
+
+  cursor: pointer;
 }
 
 .services__button:hover,
@@ -1583,6 +1614,10 @@ input[type="radio"].visually-hidden {
   min-height: 294px;
   visibility: visible;
   height: auto;
+}
+
+.info-list__item--active {
+  height: intrinsic;
 }
 
 .info-list__item--delivery {
