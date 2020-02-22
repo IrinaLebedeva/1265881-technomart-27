@@ -344,55 +344,45 @@ input[type="radio"].visually-hidden {
 
 .main-menu__search-field {
   font-size: 17px;
+  line-height: 42px;
   color: #ffffff;
   background-color: #293449;
+
   margin-left: 44px;
   padding: 0 4px;
-  border: none;
   height: 42px;
-  line-height: 42px;
   width: 226px;
+
+  border: none;
 }
 
 /* Firefox 19+ */
 .main-menu__search-field::-moz-placeholder{
-  font-size: 17px;
-  line-height: 42px;
-  height: 42px;
   color: #ffffff;
-  vertical-align: middle;
+  opacity: 1;
 }
 
 /* IE10+ */
 .main-menu__search-field:-ms-input-placeholder{
-  font-size: 17px;
-  line-height: 42px;
-  height: 42px;
-  color: #ffffff !important; /* IE11 needs the !important flag */
+  color: #ffffff;
+  opacity: 1;
 }
 
-/* Edge - only work on some properties */
+/* Edge */
 .main-menu__search-field::-ms-input-placeholder{
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 17px !important;
-  line-height: 42px;
-  height: 42px;
   color: #ffffff;
+  opacity: 1;
 }
 
 /* Chrome/Opera/Safari */
 .main-menu__search-field::-webkit-input-placeholder {
-  font-size: 17px;
-  line-height: 42px;
-  height: 42px;
-  color: #ffffff !important;
+  color: #ffffff;
+  opacity: 1;
 }
 
 .main-menu__search-field::placeholder {
-  font-size: 17px;
-  line-height: 42px;
-  height: 42px;
   color: #ffffff;
+  opacity: 1;
 }
 
 .main-menu__search-field:hover {
