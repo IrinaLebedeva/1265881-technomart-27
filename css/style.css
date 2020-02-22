@@ -365,19 +365,16 @@ input[type="radio"].visually-hidden {
 /* IE10+ */
 .main-menu__search-field:-ms-input-placeholder{
   color: #ffffff;
-  opacity: 1;
 }
 
 /* Edge */
 .main-menu__search-field::-ms-input-placeholder{
   color: #ffffff;
-  opacity: 1;
 }
 
 /* Chrome/Opera/Safari */
 .main-menu__search-field::-webkit-input-placeholder {
   color: #ffffff;
-  opacity: 1;
 }
 
 .main-menu__search-field::placeholder {
@@ -1593,6 +1590,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-left: 80px;
   padding: 0;
+  display: flex;
 }
 
 .info-list__item {
