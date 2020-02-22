@@ -123,3 +123,34 @@ function closeModals() {
     closeModal(item);
   });
 }
+
+/* services slider */
+(function () {
+  var services_buttons = document.querySelectorAll(".services__button");
+
+  if (services_buttons === null) {
+    return;
+  }
+
+  services_buttons.forEach(function (item) {
+    item.addEventListener("click", function (evt) {
+      evt.preventDefault();
+
+      let slide_id = item.dataset.id;
+      let selected_slide_item = document.querySelector(".info-list__item[data-id=" + slide_id + "]");
+      let services_items = document.querySelectorAll(".info-list__item");
+
+      services_buttons.forEach(function (buttons) {
+        buttons.classList.remove("services__button--active");
+      });
+      item.classList.add("services__button--active");
+
+      services_items.forEach(function(slide) {
+        slide.classList.add("visually-hidden");
+      });
+      selected_slide_item.classList.remove("visually-hidden");
+
+    });
+  })
+
+})();
