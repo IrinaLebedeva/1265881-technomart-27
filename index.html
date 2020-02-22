@@ -356,7 +356,7 @@
             <img src="img/map.jpg" width="300" height="158" alt="Адрес компании Техномарт - г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
           <!-- по клику открывается попап с формой обратной связи, при открытии в отдельной вкладке - переход на страницу обратной связи -->
-          <a class="contacts__button button button--primary" href="#">Заблудились? Hапишите нам!</a>
+          <a class="contacts__link button button--primary" href="#">Заблудились? Hапишите нам!</a>
         </section>
       </div>
     </main>
@@ -484,8 +484,9 @@
           <h2 class="modal__title modal__title--notice">Товар добавлен в корзину!</h2>
         </div>
         <p class="modal__bottom">
-          <a class="button button--primary" href="#">Оформить заказ</a>
-          <button class="button button--modal-secondary" type="button">Продолжить покупки</button>
+          <!-- Переход на страницу оформления заказа -->
+          <a class="button button--primary notice-cart__order" href="#">Оформить заказ</a>
+          <button class="button button--modal-secondary notice-cart__continue" type="button">Продолжить покупки</button>
         </p>
         <button type="button" class="modal__close" aria-label="Закрыть"></button>
       </section>

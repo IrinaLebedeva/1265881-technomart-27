@@ -1701,7 +1701,7 @@ input[type="radio"].visually-hidden {
   font-size: 0;
 }
 
-.contacts__button {
+.contacts__link {
   margin-top: auto;
   padding-left: 49px;
 }
@@ -2260,6 +2260,18 @@ input[type="radio"].visually-hidden {
 
 .modal--active {
   display: block;
+
+  -webkit-animation-name: modal-show;
+  animation-name: modal-show;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.modal--error {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
 }
 
 .modal__title {
@@ -2464,4 +2476,89 @@ input[type="radio"].visually-hidden {
 .notice-cart .button--primary,
 .notice-cart .button--modal-secondary {
   min-width: 220px;
+}
+
+/* animation */
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  50% {
+    -webkit-transform: translate(-51%, -50%);
+    transform: translate(-51%, -50%);
+  }
+
+  25%,
+  75% {
+    -webkit-transform: translate(-49%, -50%);
+    transform: translate(-49%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  50% {
+    -webkit-transform: translate(-51%, -50%);
+    transform: translate(-51%, -50%);
+  }
+
+  25%,
+  75% {
+    -webkit-transform: translate(-49%, -50%);
+    transform: translate(-49%, -50%);
+  }
+}
+
+@-webkit-keyframes modal-show {
+  0% {
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+
+  70% {
+    -webkit-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%);
+  }
+
+  90% {
+    -webkit-transform: translate(-50%, -45%);
+    transform: translate(-50%, -45%);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes modal-show {
+  0% {
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+
+  70% {
+    -webkit-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%);
+  }
+
+  90% {
+    -webkit-transform: translate(-50%, -45%);
+    transform: translate(-50%, -45%);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 }
