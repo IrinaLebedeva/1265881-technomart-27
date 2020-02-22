@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.85;
@@ -58,7 +58,7 @@ input[type="radio"].visually-hidden {
 
 /* titles */
 .page-title {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: normal;
   line-height: 1;
@@ -89,7 +89,7 @@ input[type="radio"].visually-hidden {
 }
 
 .title {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: normal;
   line-height: 1;
@@ -107,7 +107,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sub-title {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 1;
@@ -140,7 +140,7 @@ input[type="radio"].visually-hidden {
 
 /* buttons */
 .button {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
@@ -280,7 +280,7 @@ input[type="radio"].visually-hidden {
 
 /* mark */
 .mark {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   line-height: 1;
   font-size: 16px;
@@ -305,7 +305,7 @@ input[type="radio"].visually-hidden {
 
 /* main-header */
 .main-header {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   line-height: 1;
 }
@@ -373,7 +373,7 @@ input[type="radio"].visually-hidden {
 
 /* Edge - only work on some properties */
 .main-menu__search-field::-ms-input-placeholder{
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px !important;
   line-height: 42px;
   height: 42px;
@@ -756,7 +756,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-account__item:not(:last-child)::after {
-  content: " ";
+  content: "";
   width: 4px;
   height: 5px;
   background-color: #32425c;
@@ -847,7 +847,7 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs__item:not(:last-child)::after {
-  content: " ";
+  content: "";
   background-image: url("../img/icons/icon-chain-element.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -876,7 +876,7 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs__link--icon-home::before {
-  content: " ";
+  content: "";
   background-image: url("../img/icons/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -897,7 +897,7 @@ input[type="radio"].visually-hidden {
 
 /* categories */
 .categories {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
 
   list-style: none;
@@ -1095,7 +1095,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
 
   position: relative;
@@ -1185,7 +1185,7 @@ input[type="radio"].visually-hidden {
 }
 
 .goods {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 
   list-style: none;
   margin: 0;
@@ -1289,7 +1289,7 @@ input[type="radio"].visually-hidden {
 }
 
 .goods__price::after {
-  content: " ";
+  content: "";
   border: 19px solid white;
   border-left-color: #ee3643;
 
@@ -1434,7 +1434,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination__link {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 1.38;
   color: #000000;
@@ -1530,7 +1530,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services__list {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   font-weight: bold;
   line-height: 1.43;
@@ -1543,7 +1543,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services__list:after {
-  content: '';
+  content: "";
   background-image: url("../img/services-shadow.png");
   width: 10px;
   min-height: 279px;
@@ -1554,7 +1554,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services__button {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   font-weight: bold;
   line-height: 1.43;
@@ -1649,7 +1649,7 @@ input[type="radio"].visually-hidden {
 }
 
 .delivery__item {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.11;
   padding-left: 36px;
@@ -1796,7 +1796,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter__number {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 1.06;
   color: #000000;
@@ -1815,7 +1815,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter__number-range-sign {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.13;
   color: #444444;
@@ -1867,7 +1867,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter__input--checkbox + label::before {
-  content: " ";
+  content: "";
   background-image: url("../img/form-filter/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1887,7 +1887,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter__input--radio + label::before {
-  content: " ";
+  content: "";
   background-image: url("../img/form-filter/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1921,7 +1921,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter__button {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 1.38;
   color: #000000;
@@ -2039,7 +2039,7 @@ input[type="radio"].visually-hidden {
 
 /* main-footer */
 .main-footer {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   line-height: 1;
   background-color: #32425c;
@@ -2269,7 +2269,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal__title {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: normal;
   line-height: 1;
@@ -2307,7 +2307,7 @@ input[type="radio"].visually-hidden {
 
 .modal__close::before,
 .modal__close::after {
-  content: '';
+  content: "";
   width: 3px;
   height: 26px;
   background-color: #ee3643;
@@ -2341,7 +2341,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal__label {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 1;
 
@@ -2351,7 +2351,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal__input {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.85;

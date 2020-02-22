@@ -352,10 +352,11 @@
             заехав в наш офис:
           </p>
           <!-- по клику открывается попап с интерактивной картой -->
-          <a class="contacts__link-map" href="#">
+          <a class="contacts__link-map" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&sll=47.886089%2C56.630842&sspn=0.145741%2C0.059416&z=16">
             <img src="img/map.jpg" width="300" height="158" alt="Адрес компании Техномарт - г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
-          <button class="contacts__button button button--primary" type="button">Заблудились? Hапишите нам!</button>
+          <!-- по клику открывается попап с формой обратной связи, при открытии в отдельной вкладке - переход на страницу обратной связи -->
+          <a class="contacts__button button button--primary" href="#">Заблудились? Hапишите нам!</a>
         </section>
       </div>
     </main>
@@ -474,6 +475,19 @@
         </p>
         <!-- смещаю кнопку закрытия вправо, т.к. загораживаются контролы интерактивной карты; -->
         <button type="button" class="modal__close modal__close--right" aria-label="Закрыть"></button>
+      </section>
+    </div>
+
+    <div class="modal">
+      <section class="modal__notice-cart notice-cart">
+        <div class="modal__content">
+          <h2 class="modal__title modal__title--notice">Товар добавлен в корзину!</h2>
+        </div>
+        <p class="modal__bottom">
+          <a class="button button--primary" href="#">Оформить заказ</a>
+          <button class="button button--modal-secondary" type="button">Продолжить покупки</button>
+        </p>
+        <button type="button" class="modal__close" aria-label="Закрыть"></button>
       </section>
     </div>
 
