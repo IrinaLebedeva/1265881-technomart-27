@@ -137,7 +137,7 @@ function closeModals() {
       evt.preventDefault();
 
       let slide_id = item.dataset.id;
-      let selected_slide_item = document.querySelector(".info-list__item[data-id=" + slide_id + "]");
+      let selected_slide_item = document.querySelector(".info-list__item[data-id='" + slide_id + "']");
       let services_items = document.querySelectorAll(".info-list__item");
 
       services_buttons.forEach(function (buttons) {
@@ -152,5 +152,71 @@ function closeModals() {
 
     });
   })
+
+})();
+
+(function () {
+  if (document.querySelector(".slider__item") === null) {
+    return;
+  }
+
+  var slider_items = document.querySelectorAll(".slider__item");
+  var dot_nav_items = document.querySelectorAll(".dot-nav__item");
+  var left_nav = document.querySelector(".slider__arrow-nav--left");
+  var right_nav = document.querySelector(".slider__arrow-nav--right");
+  var slider_items_count = slider_items.length;
+
+  dot_nav_items.forEach(function (item) {
+
+    item.addEventListener("click", function (evt) {
+      evt.preventDefault();
+
+      changeSlide(item.dataset.id);
+
+    });
+  });
+
+  left_nav.addEventListener("click", function (evt) {
+    evt.preventDefault();
+
+    let slider_active_id = document.querySelector(".slider__item--active").dataset.id;
+    let left_slider_id = Number(slider_active_id) - 1;
+
+    if (left_slider_id > 0) {
+      changeSlide(left_slider_id);
+    } else {
+      changeSlide(slider_items_count);
+    }
+  });
+
+  right_nav.addEventListener("click", function (evt) {
+    evt.preventDefault();
+
+    let slider_active_id = document.querySelector(".slider__item--active").dataset.id;
+    let right_slider_id = Number(slider_active_id) + 1;
+
+    if (right_slider_id < slider_items_count + 1) {
+      changeSlide(right_slider_id);
+    } else {
+      changeSlide(1);
+    }
+  });
+
+  function changeSlide(item_id) {
+    let current_slide = document.querySelector(".slider__item[data-id='" + item_id + "']");
+    let current_dot = document.querySelector(".dot-nav__item[data-id='" + item_id + "']");
+
+    slider_items.forEach(function (item) {
+      item.classList.remove("slider__item--active");
+    });
+
+    current_slide.classList.add("slider__item--active");
+
+    dot_nav_items.forEach(function (item) {
+      item.classList.remove("dot-nav__item--active");
+    });
+
+    current_dot.classList.add("dot-nav__item--active");
+  }
 
 })();

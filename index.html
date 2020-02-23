@@ -6,6 +6,21 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Pixel Glass -->
+    <!--style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url( "img/technomart-index.jpg" );
+      }
+      BODY {
+        opacity: .5;
+      }
+    </style>
+    <link rel="stylesheet" href="node_modules/pixel-glass/styles.css">
+    <script src="node_modules/pixel-glass/script.js"></script-->
+    <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="main-header">
@@ -111,13 +126,13 @@
         </ul>
         <div class="advantages__wrapper">
           <div class="advantages__slider slider">
-            <div class="slider__item slider__item--drill slider__item--active">
+            <div class="slider__item slider__item--drill slider__item--active" data-id="1">
               <span class="slider__title">Дрели</span>
               <p class="slider__text">Соседям на радость!</p>
               <!-- ссылки дублируются в каждом слайде, т.к. в будущем могут вести на разные страницы -->
               <a class="slider__button button button--primary" href="catalog.html">Открыть каталог</a>
             </div>
-            <div class="slider__item slider__item--perforator">
+            <div class="slider__item slider__item--perforator" data-id="2">
               <span class="slider__title">Перфораторы</span>
               <p class="slider__text">Настоящие мужские игрушки</p>
               <a class="slider__button button button--primary" href="catalog.html">Открыть каталог</a>
@@ -125,8 +140,8 @@
             <button type="button" class="slider__arrow-nav slider__arrow-nav--left" aria-label="Назад"></button>
             <button type="button" class="slider__arrow-nav slider__arrow-nav--right" aria-label="Вперёд"></button>
             <div class="slider__dot-nav dot-nav">
-              <button type="button" class="dot-nav__item dot-nav__item--active" aria-label="Переход к слайду о дрелях"></button>
-              <button type="button" class="dot-nav__item" aria-label="Переход к слайду о перфораторах"></button>
+              <button type="button" class="dot-nav__item dot-nav__item--active" data-id="1" aria-label="Переход к слайду о дрелях"></button>
+              <button type="button" class="dot-nav__item" data-id="2" aria-label="Переход к слайду о перфораторах"></button>
             </div>
           </div>
           <ul class="advantages__categories-vertical categories">
