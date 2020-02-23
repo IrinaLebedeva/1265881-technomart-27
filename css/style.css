@@ -1191,6 +1191,7 @@ input[type="radio"].visually-hidden {
   min-height: 318px;
   margin-bottom: 20px;
   margin-right: 20px;
+  padding-top: 44px;
   padding-bottom: 20px;
 
   display: flex;
@@ -1228,8 +1229,12 @@ input[type="radio"].visually-hidden {
 }
 
 .goods__img {
-  order: -1;
   margin-bottom: 10px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
 }
 
 .goods__title {
@@ -1289,55 +1294,44 @@ input[type="radio"].visually-hidden {
   right: -36px;
 }
 
-.goods__buttons {
-  background-color: #ffffff;
-
-  height: 170px;
-  width: 100%;
-  display: none;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+.goods__item:hover .goods__img,
+.goods__item:focus .goods__img,
+.goods__link:focus .goods__img{
   opacity: 0;
 }
 
-.goods__item:hover .goods__buttons,
-.goods__item:focus .goods__buttons,
-.goods__link:focus ~ .goods__buttons,
-.goods__buttons--active {
-  opacity: 1;
+
+.goods__btn-buy:focus ~ .goods__img,
+.goods__btn-bookmark:focus ~ .goods__img {
+  opacity: 0;
 }
 
-.goods__buttons:focus-within {
-  opacity: 1;
-}
-
-.goods__buttons .button {
+.goods__btn-bookmark {
   min-width: 135px;
   max-width: 170px;
   max-height: 53px;
   padding-right: 9px;
   padding-left: 12px;
+  margin-bottom: 53px;
 
   overflow: hidden;
+  order: -1;
 }
 
-.goods__buttons .goods__btn-buy {
+.goods__btn-buy {
   text-align: center;
 
+  min-width: 135px;
+  max-width: 170px;
   max-height: 48px;
-  padding-left: 36px;
   padding-right: 31px;
+  padding-left: 36px;
   margin-bottom: 9px;
 
   position: relative;
+
+  overflow: hidden;
+  order: -1;
 }
 
 .goods__btn-buy::before {
