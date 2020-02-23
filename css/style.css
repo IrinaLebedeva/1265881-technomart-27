@@ -1286,7 +1286,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 0;
-  right: -37px;
+  right: -36px;
 }
 
 .goods__buttons {
@@ -1627,7 +1627,7 @@ input[type="radio"].visually-hidden {
 .delivery {
   display: flex;
   flex-direction: column;
-  min-height: 443px;
+  min-height: 441px;
 }
 
 .delivery__list {
@@ -2308,6 +2308,8 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   background: none;
   border: none;
+
+  z-index: 2;
 }
 
 .modal__close::before,
@@ -2330,11 +2332,6 @@ input[type="radio"].visually-hidden {
 .modal__close::after {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-}
-
-.modal__close--right {
-  top: 0;
-  right: -30px;
 }
 
 /* modal input fields */
