@@ -136,9 +136,9 @@ function closeModals() {
     item.addEventListener("click", function (evt) {
       evt.preventDefault();
 
-      let slide_id = item.dataset.id;
-      let selected_slide_item = document.querySelector(".info-list__item[data-id='" + slide_id + "']");
-      let services_items = document.querySelectorAll(".info-list__item");
+      var slide_id = item.dataset.id;
+      var selected_slide_item = document.querySelector(".info-list__item[data-id='" + slide_id + "']");
+      var services_items = document.querySelectorAll(".info-list__item");
 
       services_buttons.forEach(function (buttons) {
         buttons.classList.remove("services__button--active");
@@ -179,8 +179,8 @@ function closeModals() {
   left_nav.addEventListener("click", function (evt) {
     evt.preventDefault();
 
-    let slider_active_id = document.querySelector(".slider__item--active").dataset.id;
-    let left_slider_id = Number(slider_active_id) - 1;
+    var slider_active_id = document.querySelector(".slider__item--active").dataset.id;
+    var left_slider_id = Number(slider_active_id) - 1;
 
     if (left_slider_id > 0) {
       changeSlide(left_slider_id);
@@ -192,8 +192,8 @@ function closeModals() {
   right_nav.addEventListener("click", function (evt) {
     evt.preventDefault();
 
-    let slider_active_id = document.querySelector(".slider__item--active").dataset.id;
-    let right_slider_id = Number(slider_active_id) + 1;
+    var slider_active_id = document.querySelector(".slider__item--active").dataset.id;
+    var right_slider_id = Number(slider_active_id) + 1;
 
     if (right_slider_id < slider_items_count + 1) {
       changeSlide(right_slider_id);
@@ -203,8 +203,8 @@ function closeModals() {
   });
 
   function changeSlide(item_id) {
-    let current_slide = document.querySelector(".slider__item[data-id='" + item_id + "']");
-    let current_dot = document.querySelector(".dot-nav__item[data-id='" + item_id + "']");
+    var current_slide = document.querySelector(".slider__item[data-id='" + item_id + "']");
+    var current_dot = document.querySelector(".dot-nav__item[data-id='" + item_id + "']");
 
     slider_items.forEach(function (item) {
       item.classList.remove("slider__item--active");
