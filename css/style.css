@@ -456,7 +456,7 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.main-menu__btn.icon:visited::before{
+.main-menu__btn.icon:visited::before {
   opacity: 0.5;
 }
 
@@ -628,12 +628,12 @@ input[type="radio"].visually-hidden {
   left: 15px;
 }
 
-.user-nav__link--login:hover .user-nav__icon-login path,
-.user-nav__link--login:focus .user-nav__icon-login path {
+.user-nav__link--login:hover path,
+.user-nav__link--login:focus path {
   fill: #32425C;
 }
 
-.user-nav__link--login:active .user-nav__icon-login path {
+.user-nav__link--login:active path {
   fill: #c5c5c5;
 }
 
