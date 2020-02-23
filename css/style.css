@@ -303,6 +303,8 @@ input[type="radio"].visually-hidden {
 
   display: flex;
   justify-content: center;
+
+  z-index: 3;
 }
 
 /* main-header */
@@ -1235,6 +1237,7 @@ input[type="radio"].visually-hidden {
   top: 0;
   left: 0;
   opacity: 1;
+  z-index: 1;
 }
 
 .goods__title {
@@ -1296,14 +1299,37 @@ input[type="radio"].visually-hidden {
 
 .goods__item:hover .goods__img,
 .goods__item:focus .goods__img,
-.goods__link:focus .goods__img{
+.goods__link:focus .goods__img {
   opacity: 0;
+  z-index: 0;
 }
 
+.goods__item:hover .goods__btn-buy,
+.goods__item:focus .goods__btn-buy,
+.goods__link:focus .goods__btn-buy,
+.goods__item:hover .goods__btn-bookmark,
+.goods__item:focus .goods__btn-bookmark,
+.goods__link:focus .goods__btn-bookmark {
+  z-index: 1;
+}
 
 .goods__btn-buy:focus ~ .goods__img,
 .goods__btn-bookmark:focus ~ .goods__img {
   opacity: 0;
+  z-index: 0;
+}
+
+.goods__btn-buy:focus,
+.goods__btn-bookmark:focus {
+  z-index: 1;
+}
+
+.goods__btn-bookmark,
+.goods__btn-buy {
+
+  overflow: hidden;
+  order: -1;
+  z-index: 0;
 }
 
 .goods__btn-bookmark {
@@ -1313,9 +1339,6 @@ input[type="radio"].visually-hidden {
   padding-right: 9px;
   padding-left: 12px;
   margin-bottom: 53px;
-
-  overflow: hidden;
-  order: -1;
 }
 
 .goods__btn-buy {
@@ -1329,9 +1352,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 9px;
 
   position: relative;
-
-  overflow: hidden;
-  order: -1;
 }
 
 .goods__btn-buy::before {
@@ -2249,6 +2269,8 @@ input[type="radio"].visually-hidden {
   transform: translate(-50%, -50%);
 
   background-color: #ffffff;
+
+  z-index: 4;
 }
 
 .modal--active {
