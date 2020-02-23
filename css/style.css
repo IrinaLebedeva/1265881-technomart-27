@@ -2381,7 +2381,8 @@ input[type="radio"].visually-hidden {
   border: solid 2px #d7dcde;
   background-color: #ffffff;
 
-  padding: 5px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .modal__input:hover {
