@@ -1,5 +1,15 @@
 "use strict";
+/* polyfill for IE11 */
+if ('NodeList' in window && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = function (callback, thisArg) {
+    thisArg = thisArg || window;
+    for (var i = 0; i < this.length; i++) {
+      callback.call(thisArg, this[i], i, this);
+    }
+  };
+}
 
+/* modals */
 (function() {
   var contacts_link = document.querySelector(".contacts__link");
 
