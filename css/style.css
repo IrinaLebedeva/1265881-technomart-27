@@ -264,18 +264,27 @@ input[type="radio"].visually-hidden {
   content: url("../img/icons/icon-bookmark.svg");
   top: 12px;
   left: 17px;
+
+  width: 14px;
+  height: 16px;
 }
 
 .icon--cart::before {
   content: url("../img/icons/icon-cart.svg");
   top: 12px;
   left: 18px;
+
+  width: 15px;
+  height: 15px;
 }
 
 .icon--phone::before {
   content: url("../img/icons/icon-phone.svg");
   top: 5px;
   left: 12px;
+
+  width: 19px;
+  height: 19px;
 }
 
 /* mark */
